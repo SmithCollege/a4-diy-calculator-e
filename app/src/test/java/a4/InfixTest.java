@@ -9,7 +9,6 @@ public class InfixTest {
     public void testSingle() {
         String[] expressions = {"3.14159", "7"};
         Double[] expected = {3.14159, 7.0};
-
         for (int i = 0; i < expressions.length; i++) {
             assertEquals("Failed for expression: " + expressions[i], expected[i], Infix.infixToPostfix(Tokenizer.readTokens(expressions[i])), 0.00001);
         }

@@ -1,0 +1,4122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class a4.InfixTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class a4.InfixTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/a4.html">a4</a> &gt; InfixTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.088s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">80%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testExponent"></a>
+<h3 class="failures">testExponent</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Imbalanced equation
+	at a4.Postfix.postfix(Postfix.java:87)
+	at a4.Infix.infixToPostfix(Infix.java:100)
+	at a4.InfixTest.testExponent(InfixTest.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testExponent</td>
+<td class="failures">0.005s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testInfixThrowsException</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testParen</td>
+<td class="success">0.053s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSimple</td>
+<td class="success">0.020s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSingle</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+tokens: [+]
+Stack: []
+outputQueue: []
+
+Stack: []
+
+STARTING POSTFIX
+
+tokens: [4.0, ^, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [^, 2.0]
+Stack: []
+outputQueue: [4.0]
+
+Stack: []
+
+tokens: [2.0]
+Stack: [^]
+outputQueue: [4.0]
+
+
+STARTING POSTFIX
+Loop for: 4.0
+starting queue: [4.0, 2.0, ^]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, ^]
+stack: [4.0]
+Loop for: 2.0
+starting queue: [2.0, ^]
+starting stack: [4.0]
+class java.lang.Double
+Double
+queue: [^]
+stack: [4.0, 2.0]
+Loop for: ^
+starting queue: [^]
+starting stack: [4.0, 2.0]
+class java.lang.Character
+operator: ^
+Tokens is []
+DigitStack is []
+
+tokens: [(, 7.0, )]
+Stack: []
+outputQueue: []
+
+
+tokens: [7.0, )]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [)]
+Stack: [(]
+outputQueue: [7.0]
+
+Right Paren Detected
+
+STARTING POSTFIX
+
+tokens: [(, (, (, 7.0, ), ), )]
+Stack: []
+outputQueue: []
+
+
+tokens: [(, (, 7.0, ), ), )]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [(, 7.0, ), ), )]
+Stack: [(, (]
+outputQueue: []
+
+
+tokens: [7.0, ), ), )]
+Stack: [(, (, (]
+outputQueue: []
+
+
+tokens: [), ), )]
+Stack: [(, (, (]
+outputQueue: [7.0]
+
+Right Paren Detected
+
+tokens: [), )]
+Stack: [(, (]
+outputQueue: [7.0]
+
+Right Paren Detected
+
+tokens: [)]
+Stack: [(]
+outputQueue: [7.0]
+
+Right Paren Detected
+
+STARTING POSTFIX
+
+tokens: [(, 5.0, +, 2.0, )]
+Stack: []
+outputQueue: []
+
+
+tokens: [5.0, +, 2.0, )]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [+, 2.0, )]
+Stack: [(]
+outputQueue: [5.0]
+
+Stack: [(]
+
+tokens: [2.0, )]
+Stack: [(, +]
+outputQueue: [5.0]
+
+
+tokens: [)]
+Stack: [(, +]
+outputQueue: [5.0, 2.0]
+
+Right Paren Detected
+Stack: [(, +]
+Queue: [5.0, 2.0]
+stack.getLast() is + removing top stack operator
+(
+
+STARTING POSTFIX
+Loop for: 5.0
+starting queue: [5.0, 2.0, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, +]
+stack: [5.0]
+Loop for: 2.0
+starting queue: [2.0, +]
+starting stack: [5.0]
+class java.lang.Double
+Double
+queue: [+]
+stack: [5.0, 2.0]
+Loop for: +
+starting queue: [+]
+starting stack: [5.0, 2.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+tokens: [(, 2.0, +, 3.0, ), +, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [2.0, +, 3.0, ), +, 2.0]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [+, 3.0, ), +, 2.0]
+Stack: [(]
+outputQueue: [2.0]
+
+Stack: [(]
+
+tokens: [3.0, ), +, 2.0]
+Stack: [(, +]
+outputQueue: [2.0]
+
+
+tokens: [), +, 2.0]
+Stack: [(, +]
+outputQueue: [2.0, 3.0]
+
+Right Paren Detected
+Stack: [(, +]
+Queue: [2.0, 3.0]
+stack.getLast() is + removing top stack operator
+(
+
+tokens: [+, 2.0]
+Stack: []
+outputQueue: [2.0, 3.0, +]
+
+Stack: []
+
+tokens: [2.0]
+Stack: [+]
+outputQueue: [2.0, 3.0, +]
+
+
+STARTING POSTFIX
+Loop for: 2.0
+starting queue: [2.0, 3.0, +, 2.0, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [3.0, +, 2.0, +]
+stack: [2.0]
+Loop for: 3.0
+starting queue: [3.0, +, 2.0, +]
+starting stack: [2.0]
+class java.lang.Double
+Double
+queue: [+, 2.0, +]
+stack: [2.0, 3.0]
+Loop for: +
+starting queue: [+, 2.0, +]
+starting stack: [2.0, 3.0]
+class java.lang.Character
+operator: +
+Tokens is [2.0, +]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, +]
+starting stack: [5.0]
+class java.lang.Double
+Double
+queue: [+]
+stack: [5.0, 2.0]
+Loop for: +
+starting queue: [+]
+starting stack: [5.0, 2.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+tokens: [2.0, +, (, 3.0, +, 2.0, )]
+Stack: []
+outputQueue: []
+
+
+tokens: [+, (, 3.0, +, 2.0, )]
+Stack: []
+outputQueue: [2.0]
+
+Stack: []
+
+tokens: [(, 3.0, +, 2.0, )]
+Stack: [+]
+outputQueue: [2.0]
+
+
+tokens: [3.0, +, 2.0, )]
+Stack: [+, (]
+outputQueue: [2.0]
+
+
+tokens: [+, 2.0, )]
+Stack: [+, (]
+outputQueue: [2.0, 3.0]
+
+Stack: [+, (]
+
+tokens: [2.0, )]
+Stack: [+, (, +]
+outputQueue: [2.0, 3.0]
+
+
+tokens: [)]
+Stack: [+, (, +]
+outputQueue: [2.0, 3.0, 2.0]
+
+Right Paren Detected
+Stack: [+, (, +]
+Queue: [2.0, 3.0, 2.0]
+stack.getLast() is + removing top stack operator
+(
+
+STARTING POSTFIX
+Loop for: 2.0
+starting queue: [2.0, 3.0, 2.0, +, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [3.0, 2.0, +, +]
+stack: [2.0]
+Loop for: 3.0
+starting queue: [3.0, 2.0, +, +]
+starting stack: [2.0]
+class java.lang.Double
+Double
+queue: [2.0, +, +]
+stack: [2.0, 3.0]
+Loop for: 2.0
+starting queue: [2.0, +, +]
+starting stack: [2.0, 3.0]
+class java.lang.Double
+Double
+queue: [+, +]
+stack: [2.0, 3.0, 2.0]
+Loop for: +
+starting queue: [+, +]
+starting stack: [2.0, 3.0, 2.0]
+class java.lang.Character
+operator: +
+Tokens is [+]
+DigitStack is [2.0]
+Loop for: +
+starting queue: [+]
+starting stack: [2.0, 5.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+tokens: [(, (, 2.0, +, 1.0, ), +, (, 1.0, +, 3.0, ), )]
+Stack: []
+outputQueue: []
+
+
+tokens: [(, 2.0, +, 1.0, ), +, (, 1.0, +, 3.0, ), )]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [2.0, +, 1.0, ), +, (, 1.0, +, 3.0, ), )]
+Stack: [(, (]
+outputQueue: []
+
+
+tokens: [+, 1.0, ), +, (, 1.0, +, 3.0, ), )]
+Stack: [(, (]
+outputQueue: [2.0]
+
+Stack: [(, (]
+
+tokens: [1.0, ), +, (, 1.0, +, 3.0, ), )]
+Stack: [(, (, +]
+outputQueue: [2.0]
+
+
+tokens: [), +, (, 1.0, +, 3.0, ), )]
+Stack: [(, (, +]
+outputQueue: [2.0, 1.0]
+
+Right Paren Detected
+Stack: [(, (, +]
+Queue: [2.0, 1.0]
+stack.getLast() is + removing top stack operator
+(
+
+tokens: [+, (, 1.0, +, 3.0, ), )]
+Stack: [(]
+outputQueue: [2.0, 1.0, +]
+
+Stack: [(]
+
+tokens: [(, 1.0, +, 3.0, ), )]
+Stack: [(, +]
+outputQueue: [2.0, 1.0, +]
+
+
+tokens: [1.0, +, 3.0, ), )]
+Stack: [(, +, (]
+outputQueue: [2.0, 1.0, +]
+
+
+tokens: [+, 3.0, ), )]
+Stack: [(, +, (]
+outputQueue: [2.0, 1.0, +, 1.0]
+
+Stack: [(, +, (]
+
+tokens: [3.0, ), )]
+Stack: [(, +, (, +]
+outputQueue: [2.0, 1.0, +, 1.0]
+
+
+tokens: [), )]
+Stack: [(, +, (, +]
+outputQueue: [2.0, 1.0, +, 1.0, 3.0]
+
+Right Paren Detected
+Stack: [(, +, (, +]
+Queue: [2.0, 1.0, +, 1.0, 3.0]
+stack.getLast() is + removing top stack operator
+(
+
+tokens: [)]
+Stack: [(, +]
+outputQueue: [2.0, 1.0, +, 1.0, 3.0, +]
+
+Right Paren Detected
+Stack: [(, +]
+Queue: [2.0, 1.0, +, 1.0, 3.0, +]
+stack.getLast() is + removing top stack operator
+(
+
+STARTING POSTFIX
+Loop for: 2.0
+starting queue: [2.0, 1.0, +, 1.0, 3.0, +, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, +, 1.0, 3.0, +, +]
+stack: [2.0]
+Loop for: 1.0
+starting queue: [1.0, +, 1.0, 3.0, +, +]
+starting stack: [2.0]
+class java.lang.Double
+Double
+queue: [+, 1.0, 3.0, +, +]
+stack: [2.0, 1.0]
+Loop for: +
+starting queue: [+, 1.0, 3.0, +, +]
+starting stack: [2.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is [1.0, 3.0, +, +]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, 3.0, +, +]
+starting stack: [3.0]
+class java.lang.Double
+Double
+queue: [3.0, +, +]
+stack: [3.0, 1.0]
+Loop for: 3.0
+starting queue: [3.0, +, +]
+starting stack: [3.0, 1.0]
+class java.lang.Double
+Double
+queue: [+, +]
+stack: [3.0, 1.0, 3.0]
+Loop for: +
+starting queue: [+, +]
+starting stack: [3.0, 1.0, 3.0]
+class java.lang.Character
+operator: +
+Tokens is [+]
+DigitStack is [3.0]
+Loop for: +
+starting queue: [+]
+starting stack: [3.0, 4.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+tokens: [(, 15.0, -, 6.0, ), -, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [15.0, -, 6.0, ), -, 2.0]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [-, 6.0, ), -, 2.0]
+Stack: [(]
+outputQueue: [15.0]
+
+Stack: [(]
+
+tokens: [6.0, ), -, 2.0]
+Stack: [(, -]
+outputQueue: [15.0]
+
+
+tokens: [), -, 2.0]
+Stack: [(, -]
+outputQueue: [15.0, 6.0]
+
+Right Paren Detected
+Stack: [(, -]
+Queue: [15.0, 6.0]
+stack.getLast() is - removing top stack operator
+(
+
+tokens: [-, 2.0]
+Stack: []
+outputQueue: [15.0, 6.0, -]
+
+Stack: []
+
+tokens: [2.0]
+Stack: [-]
+outputQueue: [15.0, 6.0, -]
+
+
+STARTING POSTFIX
+Loop for: 15.0
+starting queue: [15.0, 6.0, -, 2.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [6.0, -, 2.0, -]
+stack: [15.0]
+Loop for: 6.0
+starting queue: [6.0, -, 2.0, -]
+starting stack: [15.0]
+class java.lang.Double
+Double
+queue: [-, 2.0, -]
+stack: [15.0, 6.0]
+Loop for: -
+starting queue: [-, 2.0, -]
+starting stack: [15.0, 6.0]
+class java.lang.Character
+operator: -
+Tokens is [2.0, -]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, -]
+starting stack: [9.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [9.0, 2.0]
+Loop for: -
+starting queue: [-]
+starting stack: [9.0, 2.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [15.0, -, (, 10.0, -, 2.0, )]
+Stack: []
+outputQueue: []
+
+
+tokens: [-, (, 10.0, -, 2.0, )]
+Stack: []
+outputQueue: [15.0]
+
+Stack: []
+
+tokens: [(, 10.0, -, 2.0, )]
+Stack: [-]
+outputQueue: [15.0]
+
+
+tokens: [10.0, -, 2.0, )]
+Stack: [-, (]
+outputQueue: [15.0]
+
+
+tokens: [-, 2.0, )]
+Stack: [-, (]
+outputQueue: [15.0, 10.0]
+
+Stack: [-, (]
+
+tokens: [2.0, )]
+Stack: [-, (, -]
+outputQueue: [15.0, 10.0]
+
+
+tokens: [)]
+Stack: [-, (, -]
+outputQueue: [15.0, 10.0, 2.0]
+
+Right Paren Detected
+Stack: [-, (, -]
+Queue: [15.0, 10.0, 2.0]
+stack.getLast() is - removing top stack operator
+(
+
+STARTING POSTFIX
+Loop for: 15.0
+starting queue: [15.0, 10.0, 2.0, -, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [10.0, 2.0, -, -]
+stack: [15.0]
+Loop for: 10.0
+starting queue: [10.0, 2.0, -, -]
+starting stack: [15.0]
+class java.lang.Double
+Double
+queue: [2.0, -, -]
+stack: [15.0, 10.0]
+Loop for: 2.0
+starting queue: [2.0, -, -]
+starting stack: [15.0, 10.0]
+class java.lang.Double
+Double
+queue: [-, -]
+stack: [15.0, 10.0, 2.0]
+Loop for: -
+starting queue: [-, -]
+starting stack: [15.0, 10.0, 2.0]
+class java.lang.Character
+operator: -
+Tokens is [-]
+DigitStack is [15.0]
+Loop for: -
+starting queue: [-]
+starting stack: [15.0, 8.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [(, 3.5, *, 4.0, ), *, 0.5]
+Stack: []
+outputQueue: []
+
+
+tokens: [3.5, *, 4.0, ), *, 0.5]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [*, 4.0, ), *, 0.5]
+Stack: [(]
+outputQueue: [3.5]
+
+Stack: [(]
+
+tokens: [4.0, ), *, 0.5]
+Stack: [(, *]
+outputQueue: [3.5]
+
+
+tokens: [), *, 0.5]
+Stack: [(, *]
+outputQueue: [3.5, 4.0]
+
+Right Paren Detected
+Stack: [(, *]
+Queue: [3.5, 4.0]
+stack.getLast() is * removing top stack operator
+(
+
+tokens: [*, 0.5]
+Stack: []
+outputQueue: [3.5, 4.0, *]
+
+Stack: []
+
+tokens: [0.5]
+Stack: [*]
+outputQueue: [3.5, 4.0, *]
+
+
+STARTING POSTFIX
+Loop for: 3.5
+starting queue: [3.5, 4.0, *, 0.5, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [4.0, *, 0.5, *]
+stack: [3.5]
+Loop for: 4.0
+starting queue: [4.0, *, 0.5, *]
+starting stack: [3.5]
+class java.lang.Double
+Double
+queue: [*, 0.5, *]
+stack: [3.5, 4.0]
+Loop for: *
+starting queue: [*, 0.5, *]
+starting stack: [3.5, 4.0]
+class java.lang.Character
+operator: *
+Tokens is [0.5, *]
+DigitStack is []
+Loop for: 0.5
+starting queue: [0.5, *]
+starting stack: [14.0]
+class java.lang.Double
+Double
+queue: [*]
+stack: [14.0, 0.5]
+Loop for: *
+starting queue: [*]
+starting stack: [14.0, 0.5]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+tokens: [0.5, *, (, 4.0, *, 3.5, )]
+Stack: []
+outputQueue: []
+
+
+tokens: [*, (, 4.0, *, 3.5, )]
+Stack: []
+outputQueue: [0.5]
+
+Stack: []
+
+tokens: [(, 4.0, *, 3.5, )]
+Stack: [*]
+outputQueue: [0.5]
+
+
+tokens: [4.0, *, 3.5, )]
+Stack: [*, (]
+outputQueue: [0.5]
+
+
+tokens: [*, 3.5, )]
+Stack: [*, (]
+outputQueue: [0.5, 4.0]
+
+Stack: [*, (]
+
+tokens: [3.5, )]
+Stack: [*, (, *]
+outputQueue: [0.5, 4.0]
+
+
+tokens: [)]
+Stack: [*, (, *]
+outputQueue: [0.5, 4.0, 3.5]
+
+Right Paren Detected
+Stack: [*, (, *]
+Queue: [0.5, 4.0, 3.5]
+stack.getLast() is * removing top stack operator
+(
+
+STARTING POSTFIX
+Loop for: 0.5
+starting queue: [0.5, 4.0, 3.5, *, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [4.0, 3.5, *, *]
+stack: [0.5]
+Loop for: 4.0
+starting queue: [4.0, 3.5, *, *]
+starting stack: [0.5]
+class java.lang.Double
+Double
+queue: [3.5, *, *]
+stack: [0.5, 4.0]
+Loop for: 3.5
+starting queue: [3.5, *, *]
+starting stack: [0.5, 4.0]
+class java.lang.Double
+Double
+queue: [*, *]
+stack: [0.5, 4.0, 3.5]
+Loop for: *
+starting queue: [*, *]
+starting stack: [0.5, 4.0, 3.5]
+class java.lang.Character
+operator: *
+Tokens is [*]
+DigitStack is [0.5]
+Loop for: *
+starting queue: [*]
+starting stack: [0.5, 14.0]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+tokens: [70.0, /, (, 100.0, /, 10.0, )]
+Stack: []
+outputQueue: []
+
+
+tokens: [/, (, 100.0, /, 10.0, )]
+Stack: []
+outputQueue: [70.0]
+
+Stack: []
+
+tokens: [(, 100.0, /, 10.0, )]
+Stack: [/]
+outputQueue: [70.0]
+
+
+tokens: [100.0, /, 10.0, )]
+Stack: [/, (]
+outputQueue: [70.0]
+
+
+tokens: [/, 10.0, )]
+Stack: [/, (]
+outputQueue: [70.0, 100.0]
+
+Stack: [/, (]
+
+tokens: [10.0, )]
+Stack: [/, (, /]
+outputQueue: [70.0, 100.0]
+
+
+tokens: [)]
+Stack: [/, (, /]
+outputQueue: [70.0, 100.0, 10.0]
+
+Right Paren Detected
+Stack: [/, (, /]
+Queue: [70.0, 100.0, 10.0]
+stack.getLast() is / removing top stack operator
+(
+
+STARTING POSTFIX
+Loop for: 70.0
+starting queue: [70.0, 100.0, 10.0, /, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [100.0, 10.0, /, /]
+stack: [70.0]
+Loop for: 100.0
+starting queue: [100.0, 10.0, /, /]
+starting stack: [70.0]
+class java.lang.Double
+Double
+queue: [10.0, /, /]
+stack: [70.0, 100.0]
+Loop for: 10.0
+starting queue: [10.0, /, /]
+starting stack: [70.0, 100.0]
+class java.lang.Double
+Double
+queue: [/, /]
+stack: [70.0, 100.0, 10.0]
+Loop for: /
+starting queue: [/, /]
+starting stack: [70.0, 100.0, 10.0]
+class java.lang.Character
+operator: /
+Tokens is [/]
+DigitStack is [70.0]
+Loop for: /
+starting queue: [/]
+starting stack: [70.0, 10.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+tokens: [(, 42.0, /, 2.0, ), /, 3.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [42.0, /, 2.0, ), /, 3.0]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [/, 2.0, ), /, 3.0]
+Stack: [(]
+outputQueue: [42.0]
+
+Stack: [(]
+
+tokens: [2.0, ), /, 3.0]
+Stack: [(, /]
+outputQueue: [42.0]
+
+
+tokens: [), /, 3.0]
+Stack: [(, /]
+outputQueue: [42.0, 2.0]
+
+Right Paren Detected
+Stack: [(, /]
+Queue: [42.0, 2.0]
+stack.getLast() is / removing top stack operator
+(
+
+tokens: [/, 3.0]
+Stack: []
+outputQueue: [42.0, 2.0, /]
+
+Stack: []
+
+tokens: [3.0]
+Stack: [/]
+outputQueue: [42.0, 2.0, /]
+
+
+STARTING POSTFIX
+Loop for: 42.0
+starting queue: [42.0, 2.0, /, 3.0, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, /, 3.0, /]
+stack: [42.0]
+Loop for: 2.0
+starting queue: [2.0, /, 3.0, /]
+starting stack: [42.0]
+class java.lang.Double
+Double
+queue: [/, 3.0, /]
+stack: [42.0, 2.0]
+Loop for: /
+starting queue: [/, 3.0, /]
+starting stack: [42.0, 2.0]
+class java.lang.Character
+operator: /
+Tokens is [3.0, /]
+DigitStack is []
+Loop for: 3.0
+starting queue: [3.0, /]
+starting stack: [21.0]
+class java.lang.Double
+Double
+queue: [/]
+stack: [21.0, 3.0]
+Loop for: /
+starting queue: [/]
+starting stack: [21.0, 3.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+tokens: [(, 11.0, +, 3.0, ), /, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [11.0, +, 3.0, ), /, 2.0]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [+, 3.0, ), /, 2.0]
+Stack: [(]
+outputQueue: [11.0]
+
+Stack: [(]
+
+tokens: [3.0, ), /, 2.0]
+Stack: [(, +]
+outputQueue: [11.0]
+
+
+tokens: [), /, 2.0]
+Stack: [(, +]
+outputQueue: [11.0, 3.0]
+
+Right Paren Detected
+Stack: [(, +]
+Queue: [11.0, 3.0]
+stack.getLast() is + removing top stack operator
+(
+
+tokens: [/, 2.0]
+Stack: []
+outputQueue: [11.0, 3.0, +]
+
+Stack: []
+
+tokens: [2.0]
+Stack: [/]
+outputQueue: [11.0, 3.0, +]
+
+
+STARTING POSTFIX
+Loop for: 11.0
+starting queue: [11.0, 3.0, +, 2.0, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [3.0, +, 2.0, /]
+stack: [11.0]
+Loop for: 3.0
+starting queue: [3.0, +, 2.0, /]
+starting stack: [11.0]
+class java.lang.Double
+Double
+queue: [+, 2.0, /]
+stack: [11.0, 3.0]
+Loop for: +
+starting queue: [+, 2.0, /]
+starting stack: [11.0, 3.0]
+class java.lang.Character
+operator: +
+Tokens is [2.0, /]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, /]
+starting stack: [14.0]
+class java.lang.Double
+Double
+queue: [/]
+stack: [14.0, 2.0]
+Loop for: /
+starting queue: [/]
+starting stack: [14.0, 2.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+tokens: [0.1, *, (, 35.0, +, 35.0, )]
+Stack: []
+outputQueue: []
+
+
+tokens: [*, (, 35.0, +, 35.0, )]
+Stack: []
+outputQueue: [0.1]
+
+Stack: []
+
+tokens: [(, 35.0, +, 35.0, )]
+Stack: [*]
+outputQueue: [0.1]
+
+
+tokens: [35.0, +, 35.0, )]
+Stack: [*, (]
+outputQueue: [0.1]
+
+
+tokens: [+, 35.0, )]
+Stack: [*, (]
+outputQueue: [0.1, 35.0]
+
+Stack: [*, (]
+
+tokens: [35.0, )]
+Stack: [*, (, +]
+outputQueue: [0.1, 35.0]
+
+
+tokens: [)]
+Stack: [*, (, +]
+outputQueue: [0.1, 35.0, 35.0]
+
+Right Paren Detected
+Stack: [*, (, +]
+Queue: [0.1, 35.0, 35.0]
+stack.getLast() is + removing top stack operator
+(
+
+STARTING POSTFIX
+Loop for: 0.1
+starting queue: [0.1, 35.0, 35.0, +, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [35.0, 35.0, +, *]
+stack: [0.1]
+Loop for: 35.0
+starting queue: [35.0, 35.0, +, *]
+starting stack: [0.1]
+class java.lang.Double
+Double
+queue: [35.0, +, *]
+stack: [0.1, 35.0]
+Loop for: 35.0
+starting queue: [35.0, +, *]
+starting stack: [0.1, 35.0]
+class java.lang.Double
+Double
+queue: [+, *]
+stack: [0.1, 35.0, 35.0]
+Loop for: +
+starting queue: [+, *]
+starting stack: [0.1, 35.0, 35.0]
+class java.lang.Character
+operator: +
+Tokens is [*]
+DigitStack is [0.1]
+Loop for: *
+starting queue: [*]
+starting stack: [0.1, 70.0]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+tokens: [70.0, /, (, 13.0, -, 8.0, ), /, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [/, (, 13.0, -, 8.0, ), /, 2.0]
+Stack: []
+outputQueue: [70.0]
+
+Stack: []
+
+tokens: [(, 13.0, -, 8.0, ), /, 2.0]
+Stack: [/]
+outputQueue: [70.0]
+
+
+tokens: [13.0, -, 8.0, ), /, 2.0]
+Stack: [/, (]
+outputQueue: [70.0]
+
+
+tokens: [-, 8.0, ), /, 2.0]
+Stack: [/, (]
+outputQueue: [70.0, 13.0]
+
+Stack: [/, (]
+
+tokens: [8.0, ), /, 2.0]
+Stack: [/, (, -]
+outputQueue: [70.0, 13.0]
+
+
+tokens: [), /, 2.0]
+Stack: [/, (, -]
+outputQueue: [70.0, 13.0, 8.0]
+
+Right Paren Detected
+Stack: [/, (, -]
+Queue: [70.0, 13.0, 8.0]
+stack.getLast() is - removing top stack operator
+(
+
+tokens: [/, 2.0]
+Stack: [/]
+outputQueue: [70.0, 13.0, 8.0, -]
+
+Stack: [/]
+
+tokens: [2.0]
+Stack: [/]
+outputQueue: [70.0, 13.0, 8.0, -, /]
+
+
+STARTING POSTFIX
+Loop for: 70.0
+starting queue: [70.0, 13.0, 8.0, -, /, 2.0, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [13.0, 8.0, -, /, 2.0, /]
+stack: [70.0]
+Loop for: 13.0
+starting queue: [13.0, 8.0, -, /, 2.0, /]
+starting stack: [70.0]
+class java.lang.Double
+Double
+queue: [8.0, -, /, 2.0, /]
+stack: [70.0, 13.0]
+Loop for: 8.0
+starting queue: [8.0, -, /, 2.0, /]
+starting stack: [70.0, 13.0]
+class java.lang.Double
+Double
+queue: [-, /, 2.0, /]
+stack: [70.0, 13.0, 8.0]
+Loop for: -
+starting queue: [-, /, 2.0, /]
+starting stack: [70.0, 13.0, 8.0]
+class java.lang.Character
+operator: -
+Tokens is [/, 2.0, /]
+DigitStack is [70.0]
+Loop for: /
+starting queue: [/, 2.0, /]
+starting stack: [70.0, 5.0]
+class java.lang.Character
+operator: /
+Tokens is [2.0, /]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, /]
+starting stack: [14.0]
+class java.lang.Double
+Double
+queue: [/]
+stack: [14.0, 2.0]
+Loop for: /
+starting queue: [/]
+starting stack: [14.0, 2.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+tokens: [(, 9.0, -, 1.0, -, 1.0, )]
+Stack: []
+outputQueue: []
+
+
+tokens: [9.0, -, 1.0, -, 1.0, )]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [-, 1.0, -, 1.0, )]
+Stack: [(]
+outputQueue: [9.0]
+
+Stack: [(]
+
+tokens: [1.0, -, 1.0, )]
+Stack: [(, -]
+outputQueue: [9.0]
+
+
+tokens: [-, 1.0, )]
+Stack: [(, -]
+outputQueue: [9.0, 1.0]
+
+Stack: [(, -]
+
+tokens: [1.0, )]
+Stack: [(, -]
+outputQueue: [9.0, 1.0, -]
+
+
+tokens: [)]
+Stack: [(, -]
+outputQueue: [9.0, 1.0, -, 1.0]
+
+Right Paren Detected
+Stack: [(, -]
+Queue: [9.0, 1.0, -, 1.0]
+stack.getLast() is - removing top stack operator
+(
+
+STARTING POSTFIX
+Loop for: 9.0
+starting queue: [9.0, 1.0, -, 1.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, -, 1.0, -]
+stack: [9.0]
+Loop for: 1.0
+starting queue: [1.0, -, 1.0, -]
+starting stack: [9.0]
+class java.lang.Double
+Double
+queue: [-, 1.0, -]
+stack: [9.0, 1.0]
+Loop for: -
+starting queue: [-, 1.0, -]
+starting stack: [9.0, 1.0]
+class java.lang.Character
+operator: -
+Tokens is [1.0, -]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, -]
+starting stack: [8.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [8.0, 1.0]
+Loop for: -
+starting queue: [-]
+starting stack: [8.0, 1.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [(, 9.0, ), -, (, 2.0, )]
+Stack: []
+outputQueue: []
+
+
+tokens: [9.0, ), -, (, 2.0, )]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [), -, (, 2.0, )]
+Stack: [(]
+outputQueue: [9.0]
+
+Right Paren Detected
+
+tokens: [-, (, 2.0, )]
+Stack: []
+outputQueue: [9.0]
+
+Stack: []
+
+tokens: [(, 2.0, )]
+Stack: [-]
+outputQueue: [9.0]
+
+
+tokens: [2.0, )]
+Stack: [-, (]
+outputQueue: [9.0]
+
+
+tokens: [)]
+Stack: [-, (]
+outputQueue: [9.0, 2.0]
+
+Right Paren Detected
+
+STARTING POSTFIX
+Loop for: 9.0
+starting queue: [9.0, 2.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, -]
+stack: [9.0]
+Loop for: 2.0
+starting queue: [2.0, -]
+starting stack: [9.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [9.0, 2.0]
+Loop for: -
+starting queue: [-]
+starting stack: [9.0, 2.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [(, (, (, (, (, 1.0, +, 2.0, ), *, 3.0, ), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: []
+outputQueue: []
+
+
+tokens: [(, (, (, (, 1.0, +, 2.0, ), *, 3.0, ), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [(, (, (, 1.0, +, 2.0, ), *, 3.0, ), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (]
+outputQueue: []
+
+
+tokens: [(, (, 1.0, +, 2.0, ), *, 3.0, ), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (]
+outputQueue: []
+
+
+tokens: [(, 1.0, +, 2.0, ), *, 3.0, ), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (, (]
+outputQueue: []
+
+
+tokens: [1.0, +, 2.0, ), *, 3.0, ), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (, (, (]
+outputQueue: []
+
+
+tokens: [+, 2.0, ), *, 3.0, ), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (, (, (]
+outputQueue: [1.0]
+
+Stack: [(, (, (, (, (]
+
+tokens: [2.0, ), *, 3.0, ), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (, (, (, +]
+outputQueue: [1.0]
+
+
+tokens: [), *, 3.0, ), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (, (, (, +]
+outputQueue: [1.0, 2.0]
+
+Right Paren Detected
+Stack: [(, (, (, (, (, +]
+Queue: [1.0, 2.0]
+stack.getLast() is + removing top stack operator
+(
+
+tokens: [*, 3.0, ), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (, (]
+outputQueue: [1.0, 2.0, +]
+
+Stack: [(, (, (, (]
+
+tokens: [3.0, ), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (, (, *]
+outputQueue: [1.0, 2.0, +]
+
+
+tokens: [), -, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (, (, *]
+outputQueue: [1.0, 2.0, +, 3.0]
+
+Right Paren Detected
+Stack: [(, (, (, (, *]
+Queue: [1.0, 2.0, +, 3.0]
+stack.getLast() is * removing top stack operator
+(
+
+tokens: [-, 1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (]
+outputQueue: [1.0, 2.0, +, 3.0, *]
+
+Stack: [(, (, (]
+
+tokens: [1.0, ), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (, -]
+outputQueue: [1.0, 2.0, +, 3.0, *]
+
+
+tokens: [), /, 4.0, ), +, 5.0, )]
+Stack: [(, (, (, -]
+outputQueue: [1.0, 2.0, +, 3.0, *, 1.0]
+
+Right Paren Detected
+Stack: [(, (, (, -]
+Queue: [1.0, 2.0, +, 3.0, *, 1.0]
+stack.getLast() is - removing top stack operator
+(
+
+tokens: [/, 4.0, ), +, 5.0, )]
+Stack: [(, (]
+outputQueue: [1.0, 2.0, +, 3.0, *, 1.0, -]
+
+Stack: [(, (]
+
+tokens: [4.0, ), +, 5.0, )]
+Stack: [(, (, /]
+outputQueue: [1.0, 2.0, +, 3.0, *, 1.0, -]
+
+
+tokens: [), +, 5.0, )]
+Stack: [(, (, /]
+outputQueue: [1.0, 2.0, +, 3.0, *, 1.0, -, 4.0]
+
+Right Paren Detected
+Stack: [(, (, /]
+Queue: [1.0, 2.0, +, 3.0, *, 1.0, -, 4.0]
+stack.getLast() is / removing top stack operator
+(
+
+tokens: [+, 5.0, )]
+Stack: [(]
+outputQueue: [1.0, 2.0, +, 3.0, *, 1.0, -, 4.0, /]
+
+Stack: [(]
+
+tokens: [5.0, )]
+Stack: [(, +]
+outputQueue: [1.0, 2.0, +, 3.0, *, 1.0, -, 4.0, /]
+
+
+tokens: [)]
+Stack: [(, +]
+outputQueue: [1.0, 2.0, +, 3.0, *, 1.0, -, 4.0, /, 5.0]
+
+Right Paren Detected
+Stack: [(, +]
+Queue: [1.0, 2.0, +, 3.0, *, 1.0, -, 4.0, /, 5.0]
+stack.getLast() is + removing top stack operator
+(
+
+STARTING POSTFIX
+Loop for: 1.0
+starting queue: [1.0, 2.0, +, 3.0, *, 1.0, -, 4.0, /, 5.0, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, +, 3.0, *, 1.0, -, 4.0, /, 5.0, +]
+stack: [1.0]
+Loop for: 2.0
+starting queue: [2.0, +, 3.0, *, 1.0, -, 4.0, /, 5.0, +]
+starting stack: [1.0]
+class java.lang.Double
+Double
+queue: [+, 3.0, *, 1.0, -, 4.0, /, 5.0, +]
+stack: [1.0, 2.0]
+Loop for: +
+starting queue: [+, 3.0, *, 1.0, -, 4.0, /, 5.0, +]
+starting stack: [1.0, 2.0]
+class java.lang.Character
+operator: +
+Tokens is [3.0, *, 1.0, -, 4.0, /, 5.0, +]
+DigitStack is []
+Loop for: 3.0
+starting queue: [3.0, *, 1.0, -, 4.0, /, 5.0, +]
+starting stack: [3.0]
+class java.lang.Double
+Double
+queue: [*, 1.0, -, 4.0, /, 5.0, +]
+stack: [3.0, 3.0]
+Loop for: *
+starting queue: [*, 1.0, -, 4.0, /, 5.0, +]
+starting stack: [3.0, 3.0]
+class java.lang.Character
+operator: *
+Tokens is [1.0, -, 4.0, /, 5.0, +]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, -, 4.0, /, 5.0, +]
+starting stack: [9.0]
+class java.lang.Double
+Double
+queue: [-, 4.0, /, 5.0, +]
+stack: [9.0, 1.0]
+Loop for: -
+starting queue: [-, 4.0, /, 5.0, +]
+starting stack: [9.0, 1.0]
+class java.lang.Character
+operator: -
+Tokens is [4.0, /, 5.0, +]
+DigitStack is []
+Loop for: 4.0
+starting queue: [4.0, /, 5.0, +]
+starting stack: [8.0]
+class java.lang.Double
+Double
+queue: [/, 5.0, +]
+stack: [8.0, 4.0]
+Loop for: /
+starting queue: [/, 5.0, +]
+starting stack: [8.0, 4.0]
+class java.lang.Character
+operator: /
+Tokens is [5.0, +]
+DigitStack is []
+Loop for: 5.0
+starting queue: [5.0, +]
+starting stack: [2.0]
+class java.lang.Double
+Double
+queue: [+]
+stack: [2.0, 5.0]
+Loop for: +
+starting queue: [+]
+starting stack: [2.0, 5.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+tokens: [(, 7.0, *, (, 5.0, -, (, 4.0, *, (, 5.0, -, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: []
+outputQueue: []
+
+
+tokens: [7.0, *, (, 5.0, -, (, 4.0, *, (, 5.0, -, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [*, (, 5.0, -, (, 4.0, *, (, 5.0, -, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(]
+outputQueue: [7.0]
+
+Stack: [(]
+
+tokens: [(, 5.0, -, (, 4.0, *, (, 5.0, -, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *]
+outputQueue: [7.0]
+
+
+tokens: [5.0, -, (, 4.0, *, (, 5.0, -, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (]
+outputQueue: [7.0]
+
+
+tokens: [-, (, 4.0, *, (, 5.0, -, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (]
+outputQueue: [7.0, 5.0]
+
+Stack: [(, *, (]
+
+tokens: [(, 4.0, *, (, 5.0, -, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -]
+outputQueue: [7.0, 5.0]
+
+
+tokens: [4.0, *, (, 5.0, -, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (]
+outputQueue: [7.0, 5.0]
+
+
+tokens: [*, (, 5.0, -, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (]
+outputQueue: [7.0, 5.0, 4.0]
+
+Stack: [(, *, (, -, (]
+
+tokens: [(, 5.0, -, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (, *]
+outputQueue: [7.0, 5.0, 4.0]
+
+
+tokens: [5.0, -, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (, *, (]
+outputQueue: [7.0, 5.0, 4.0]
+
+
+tokens: [-, (, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (, *, (]
+outputQueue: [7.0, 5.0, 4.0, 5.0]
+
+Stack: [(, *, (, -, (, *, (]
+
+tokens: [(, 4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (, *, (, -]
+outputQueue: [7.0, 5.0, 4.0, 5.0]
+
+
+tokens: [4.0, *, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (, *, (, -, (]
+outputQueue: [7.0, 5.0, 4.0, 5.0]
+
+
+tokens: [*, (, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (, *, (, -, (]
+outputQueue: [7.0, 5.0, 4.0, 5.0, 4.0]
+
+Stack: [(, *, (, -, (, *, (, -, (]
+
+tokens: [(, 5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (, *, (, -, (, *]
+outputQueue: [7.0, 5.0, 4.0, 5.0, 4.0]
+
+
+tokens: [5.0, -, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (, *, (, -, (, *, (]
+outputQueue: [7.0, 5.0, 4.0, 5.0, 4.0]
+
+
+tokens: [-, 4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (, *, (, -, (, *, (]
+outputQueue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0]
+
+Stack: [(, *, (, -, (, *, (, -, (, *, (]
+
+tokens: [4.0, ), ), ), ), ), )]
+Stack: [(, *, (, -, (, *, (, -, (, *, (, -]
+outputQueue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0]
+
+
+tokens: [), ), ), ), ), )]
+Stack: [(, *, (, -, (, *, (, -, (, *, (, -]
+outputQueue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0]
+
+Right Paren Detected
+Stack: [(, *, (, -, (, *, (, -, (, *, (, -]
+Queue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0]
+stack.getLast() is - removing top stack operator
+(
+
+tokens: [), ), ), ), )]
+Stack: [(, *, (, -, (, *, (, -, (, *]
+outputQueue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -]
+
+Right Paren Detected
+Stack: [(, *, (, -, (, *, (, -, (, *]
+Queue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -]
+stack.getLast() is * removing top stack operator
+(
+
+tokens: [), ), ), )]
+Stack: [(, *, (, -, (, *, (, -]
+outputQueue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -, *]
+
+Right Paren Detected
+Stack: [(, *, (, -, (, *, (, -]
+Queue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -, *]
+stack.getLast() is - removing top stack operator
+(
+
+tokens: [), ), )]
+Stack: [(, *, (, -, (, *]
+outputQueue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -, *, -]
+
+Right Paren Detected
+Stack: [(, *, (, -, (, *]
+Queue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -, *, -]
+stack.getLast() is * removing top stack operator
+(
+
+tokens: [), )]
+Stack: [(, *, (, -]
+outputQueue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -, *, -, *]
+
+Right Paren Detected
+Stack: [(, *, (, -]
+Queue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -, *, -, *]
+stack.getLast() is - removing top stack operator
+(
+
+tokens: [)]
+Stack: [(, *]
+outputQueue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -, *, -, *, -]
+
+Right Paren Detected
+Stack: [(, *]
+Queue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -, *, -, *, -]
+stack.getLast() is * removing top stack operator
+(
+
+STARTING POSTFIX
+Loop for: 7.0
+starting queue: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -, *, -, *, -, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -, *, -, *, -, *]
+stack: [7.0]
+Loop for: 5.0
+starting queue: [5.0, 4.0, 5.0, 4.0, 5.0, 4.0, -, *, -, *, -, *]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [4.0, 5.0, 4.0, 5.0, 4.0, -, *, -, *, -, *]
+stack: [7.0, 5.0]
+Loop for: 4.0
+starting queue: [4.0, 5.0, 4.0, 5.0, 4.0, -, *, -, *, -, *]
+starting stack: [7.0, 5.0]
+class java.lang.Double
+Double
+queue: [5.0, 4.0, 5.0, 4.0, -, *, -, *, -, *]
+stack: [7.0, 5.0, 4.0]
+Loop for: 5.0
+starting queue: [5.0, 4.0, 5.0, 4.0, -, *, -, *, -, *]
+starting stack: [7.0, 5.0, 4.0]
+class java.lang.Double
+Double
+queue: [4.0, 5.0, 4.0, -, *, -, *, -, *]
+stack: [7.0, 5.0, 4.0, 5.0]
+Loop for: 4.0
+starting queue: [4.0, 5.0, 4.0, -, *, -, *, -, *]
+starting stack: [7.0, 5.0, 4.0, 5.0]
+class java.lang.Double
+Double
+queue: [5.0, 4.0, -, *, -, *, -, *]
+stack: [7.0, 5.0, 4.0, 5.0, 4.0]
+Loop for: 5.0
+starting queue: [5.0, 4.0, -, *, -, *, -, *]
+starting stack: [7.0, 5.0, 4.0, 5.0, 4.0]
+class java.lang.Double
+Double
+queue: [4.0, -, *, -, *, -, *]
+stack: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0]
+Loop for: 4.0
+starting queue: [4.0, -, *, -, *, -, *]
+starting stack: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0]
+class java.lang.Double
+Double
+queue: [-, *, -, *, -, *]
+stack: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0]
+Loop for: -
+starting queue: [-, *, -, *, -, *]
+starting stack: [7.0, 5.0, 4.0, 5.0, 4.0, 5.0, 4.0]
+class java.lang.Character
+operator: -
+Tokens is [*, -, *, -, *]
+DigitStack is [7.0, 5.0, 4.0, 5.0, 4.0]
+Loop for: *
+starting queue: [*, -, *, -, *]
+starting stack: [7.0, 5.0, 4.0, 5.0, 4.0, 1.0]
+class java.lang.Character
+operator: *
+Tokens is [-, *, -, *]
+DigitStack is [7.0, 5.0, 4.0, 5.0]
+Loop for: -
+starting queue: [-, *, -, *]
+starting stack: [7.0, 5.0, 4.0, 5.0, 4.0]
+class java.lang.Character
+operator: -
+Tokens is [*, -, *]
+DigitStack is [7.0, 5.0, 4.0]
+Loop for: *
+starting queue: [*, -, *]
+starting stack: [7.0, 5.0, 4.0, 1.0]
+class java.lang.Character
+operator: *
+Tokens is [-, *]
+DigitStack is [7.0, 5.0]
+Loop for: -
+starting queue: [-, *]
+starting stack: [7.0, 5.0, 4.0]
+class java.lang.Character
+operator: -
+Tokens is [*]
+DigitStack is [7.0]
+Loop for: *
+starting queue: [*]
+starting stack: [7.0, 1.0]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+tokens: [(, 5.0, *, (, 1.0, +, (, (, (, 7.0, -, 4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [5.0, *, (, 1.0, +, (, (, (, 7.0, -, 4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(]
+outputQueue: []
+
+
+tokens: [*, (, 1.0, +, (, (, (, 7.0, -, 4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(]
+outputQueue: [5.0]
+
+Stack: [(]
+
+tokens: [(, 1.0, +, (, (, (, 7.0, -, 4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *]
+outputQueue: [5.0]
+
+
+tokens: [1.0, +, (, (, (, 7.0, -, 4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (]
+outputQueue: [5.0]
+
+
+tokens: [+, (, (, (, 7.0, -, 4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (]
+outputQueue: [5.0, 1.0]
+
+Stack: [(, *, (]
+
+tokens: [(, (, (, 7.0, -, 4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +]
+outputQueue: [5.0, 1.0]
+
+
+tokens: [(, (, 7.0, -, 4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (]
+outputQueue: [5.0, 1.0]
+
+
+tokens: [(, 7.0, -, 4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (]
+outputQueue: [5.0, 1.0]
+
+
+tokens: [7.0, -, 4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (, (]
+outputQueue: [5.0, 1.0]
+
+
+tokens: [-, 4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (, (]
+outputQueue: [5.0, 1.0, 7.0]
+
+Stack: [(, *, (, +, (, (, (]
+
+tokens: [4.0, ), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (, (, -]
+outputQueue: [5.0, 1.0, 7.0]
+
+
+tokens: [), *, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (, (, -]
+outputQueue: [5.0, 1.0, 7.0, 4.0]
+
+Right Paren Detected
+Stack: [(, *, (, +, (, (, (, -]
+Queue: [5.0, 1.0, 7.0, 4.0]
+stack.getLast() is - removing top stack operator
+(
+
+tokens: [*, (, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -]
+
+Stack: [(, *, (, +, (, (]
+
+tokens: [(, 1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (, *]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -]
+
+
+tokens: [1.0, +, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (, *, (]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -]
+
+
+tokens: [+, 3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (, *, (]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0]
+
+Stack: [(, *, (, +, (, (, *, (]
+
+tokens: [3.0, ), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (, *, (, +]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0]
+
+
+tokens: [), ), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (, *, (, +]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0]
+
+Right Paren Detected
+Stack: [(, *, (, +, (, (, *, (, +]
+Queue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0]
+stack.getLast() is + removing top stack operator
+(
+
+tokens: [), -, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, (, *]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +]
+
+Right Paren Detected
+Stack: [(, *, (, +, (, (, *]
+Queue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +]
+stack.getLast() is * removing top stack operator
+(
+
+tokens: [-, (, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *]
+
+Stack: [(, *, (, +, (]
+
+tokens: [(, (, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *]
+
+
+tokens: [(, 6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *]
+
+
+tokens: [6.0, +, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (, (]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *]
+
+
+tokens: [+, 9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (, (]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0]
+
+Stack: [(, *, (, +, (, -, (, (]
+
+tokens: [9.0, ), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (, (, +]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0]
+
+
+tokens: [), /, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (, (, +]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0]
+
+Right Paren Detected
+Stack: [(, *, (, +, (, -, (, (, +]
+Queue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0]
+stack.getLast() is + removing top stack operator
+(
+
+tokens: [/, (, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +]
+
+Stack: [(, *, (, +, (, -, (]
+
+tokens: [(, 7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (, /]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +]
+
+
+tokens: [7.0, -, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (, /, (]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +]
+
+
+tokens: [-, 2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (, /, (]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0]
+
+Stack: [(, *, (, +, (, -, (, /, (]
+
+tokens: [2.0, ), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (, /, (, -]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0]
+
+
+tokens: [), ), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (, /, (, -]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0]
+
+Right Paren Detected
+Stack: [(, *, (, +, (, -, (, /, (, -]
+Queue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0]
+stack.getLast() is - removing top stack operator
+(
+
+tokens: [), ), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -, (, /]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -]
+
+Right Paren Detected
+Stack: [(, *, (, +, (, -, (, /]
+Queue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -]
+stack.getLast() is / removing top stack operator
+(
+
+tokens: [), -, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +, (, -]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /]
+
+Right Paren Detected
+Stack: [(, *, (, +, (, -]
+Queue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /]
+stack.getLast() is - removing top stack operator
+(
+
+tokens: [-, 3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, +]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -]
+
+Stack: [(, *, (, +]
+
+tokens: [3.0, ), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, -]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +]
+
+
+tokens: [), /, 0.2, ), /, 25.0]
+Stack: [(, *, (, -]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0]
+
+Right Paren Detected
+Stack: [(, *, (, -]
+Queue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0]
+stack.getLast() is - removing top stack operator
+(
+
+tokens: [/, 0.2, ), /, 25.0]
+Stack: [(, *]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -]
+
+Stack: [(, *]
+
+tokens: [0.2, ), /, 25.0]
+Stack: [(, /]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *]
+
+
+tokens: [), /, 25.0]
+Stack: [(, /]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2]
+
+Right Paren Detected
+Stack: [(, /]
+Queue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2]
+stack.getLast() is / removing top stack operator
+(
+
+tokens: [/, 25.0]
+Stack: []
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /]
+
+Stack: []
+
+tokens: [25.0]
+Stack: [/]
+outputQueue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /]
+
+
+STARTING POSTFIX
+Loop for: 5.0
+starting queue: [5.0, 1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+stack: [5.0]
+Loop for: 1.0
+starting queue: [1.0, 7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0]
+class java.lang.Double
+Double
+queue: [7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+stack: [5.0, 1.0]
+Loop for: 7.0
+starting queue: [7.0, 4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0]
+class java.lang.Double
+Double
+queue: [4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+stack: [5.0, 1.0, 7.0]
+Loop for: 4.0
+starting queue: [4.0, -, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 7.0]
+class java.lang.Double
+Double
+queue: [-, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+stack: [5.0, 1.0, 7.0, 4.0]
+Loop for: -
+starting queue: [-, 1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 7.0, 4.0]
+class java.lang.Character
+operator: -
+Tokens is [1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+DigitStack is [5.0, 1.0]
+Loop for: 1.0
+starting queue: [1.0, 3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 3.0]
+class java.lang.Double
+Double
+queue: [3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+stack: [5.0, 1.0, 3.0, 1.0]
+Loop for: 3.0
+starting queue: [3.0, +, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 3.0, 1.0]
+class java.lang.Double
+Double
+queue: [+, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+stack: [5.0, 1.0, 3.0, 1.0, 3.0]
+Loop for: +
+starting queue: [+, *, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 3.0, 1.0, 3.0]
+class java.lang.Character
+operator: +
+Tokens is [*, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+DigitStack is [5.0, 1.0, 3.0]
+Loop for: *
+starting queue: [*, 6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 3.0, 4.0]
+class java.lang.Character
+operator: *
+Tokens is [6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+DigitStack is [5.0, 1.0]
+Loop for: 6.0
+starting queue: [6.0, 9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 12.0]
+class java.lang.Double
+Double
+queue: [9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+stack: [5.0, 1.0, 12.0, 6.0]
+Loop for: 9.0
+starting queue: [9.0, +, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 12.0, 6.0]
+class java.lang.Double
+Double
+queue: [+, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+stack: [5.0, 1.0, 12.0, 6.0, 9.0]
+Loop for: +
+starting queue: [+, 7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 12.0, 6.0, 9.0]
+class java.lang.Character
+operator: +
+Tokens is [7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+DigitStack is [5.0, 1.0, 12.0]
+Loop for: 7.0
+starting queue: [7.0, 2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 12.0, 15.0]
+class java.lang.Double
+Double
+queue: [2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+stack: [5.0, 1.0, 12.0, 15.0, 7.0]
+Loop for: 2.0
+starting queue: [2.0, -, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 12.0, 15.0, 7.0]
+class java.lang.Double
+Double
+queue: [-, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+stack: [5.0, 1.0, 12.0, 15.0, 7.0, 2.0]
+Loop for: -
+starting queue: [-, /, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 12.0, 15.0, 7.0, 2.0]
+class java.lang.Character
+operator: -
+Tokens is [/, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+DigitStack is [5.0, 1.0, 12.0, 15.0]
+Loop for: /
+starting queue: [/, -, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 12.0, 15.0, 5.0]
+class java.lang.Character
+operator: /
+Tokens is [-, +, 3.0, -, *, 0.2, /, 25.0, /]
+DigitStack is [5.0, 1.0, 12.0]
+Loop for: -
+starting queue: [-, +, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 12.0, 3.0]
+class java.lang.Character
+operator: -
+Tokens is [+, 3.0, -, *, 0.2, /, 25.0, /]
+DigitStack is [5.0, 1.0]
+Loop for: +
+starting queue: [+, 3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 1.0, 9.0]
+class java.lang.Character
+operator: +
+Tokens is [3.0, -, *, 0.2, /, 25.0, /]
+DigitStack is [5.0]
+Loop for: 3.0
+starting queue: [3.0, -, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 10.0]
+class java.lang.Double
+Double
+queue: [-, *, 0.2, /, 25.0, /]
+stack: [5.0, 10.0, 3.0]
+Loop for: -
+starting queue: [-, *, 0.2, /, 25.0, /]
+starting stack: [5.0, 10.0, 3.0]
+class java.lang.Character
+operator: -
+Tokens is [*, 0.2, /, 25.0, /]
+DigitStack is [5.0]
+Loop for: *
+starting queue: [*, 0.2, /, 25.0, /]
+starting stack: [5.0, 7.0]
+class java.lang.Character
+operator: *
+Tokens is [0.2, /, 25.0, /]
+DigitStack is []
+Loop for: 0.2
+starting queue: [0.2, /, 25.0, /]
+starting stack: [35.0]
+class java.lang.Double
+Double
+queue: [/, 25.0, /]
+stack: [35.0, 0.2]
+Loop for: /
+starting queue: [/, 25.0, /]
+starting stack: [35.0, 0.2]
+class java.lang.Character
+operator: /
+Tokens is [25.0, /]
+DigitStack is []
+Loop for: 25.0
+starting queue: [25.0, /]
+starting stack: [175.0]
+class java.lang.Double
+Double
+queue: [/]
+stack: [175.0, 25.0]
+Loop for: /
+starting queue: [/]
+starting stack: [175.0, 25.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+tokens: [6.0, +, 1.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [+, 1.0]
+Stack: []
+outputQueue: [6.0]
+
+Stack: []
+
+tokens: [1.0]
+Stack: [+]
+outputQueue: [6.0]
+
+
+STARTING POSTFIX
+Loop for: 6.0
+starting queue: [6.0, 1.0, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, +]
+stack: [6.0]
+Loop for: 1.0
+starting queue: [1.0, +]
+starting stack: [6.0]
+class java.lang.Double
+Double
+queue: [+]
+stack: [6.0, 1.0]
+Loop for: +
+starting queue: [+]
+starting stack: [6.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+tokens: [2.0, +, 3.0, +, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [+, 3.0, +, 2.0]
+Stack: []
+outputQueue: [2.0]
+
+Stack: []
+
+tokens: [3.0, +, 2.0]
+Stack: [+]
+outputQueue: [2.0]
+
+
+tokens: [+, 2.0]
+Stack: [+]
+outputQueue: [2.0, 3.0]
+
+Stack: [+]
+
+tokens: [2.0]
+Stack: [+]
+outputQueue: [2.0, 3.0, +]
+
+
+STARTING POSTFIX
+Loop for: 2.0
+starting queue: [2.0, 3.0, +, 2.0, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [3.0, +, 2.0, +]
+stack: [2.0]
+Loop for: 3.0
+starting queue: [3.0, +, 2.0, +]
+starting stack: [2.0]
+class java.lang.Double
+Double
+queue: [+, 2.0, +]
+stack: [2.0, 3.0]
+Loop for: +
+starting queue: [+, 2.0, +]
+starting stack: [2.0, 3.0]
+class java.lang.Character
+operator: +
+Tokens is [2.0, +]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, +]
+starting stack: [5.0]
+class java.lang.Double
+Double
+queue: [+]
+stack: [5.0, 2.0]
+Loop for: +
+starting queue: [+]
+starting stack: [5.0, 2.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+tokens: [1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [+, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0]
+Stack: []
+outputQueue: [1.0]
+
+Stack: []
+
+tokens: [1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0]
+Stack: [+]
+outputQueue: [1.0]
+
+
+tokens: [+, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0]
+Stack: [+]
+outputQueue: [1.0, 1.0]
+
+Stack: [+]
+
+tokens: [1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0]
+Stack: [+]
+outputQueue: [1.0, 1.0, +]
+
+
+tokens: [+, 1.0, +, 1.0, +, 1.0, +, 1.0]
+Stack: [+]
+outputQueue: [1.0, 1.0, +, 1.0]
+
+Stack: [+]
+
+tokens: [1.0, +, 1.0, +, 1.0, +, 1.0]
+Stack: [+]
+outputQueue: [1.0, 1.0, +, 1.0, +]
+
+
+tokens: [+, 1.0, +, 1.0, +, 1.0]
+Stack: [+]
+outputQueue: [1.0, 1.0, +, 1.0, +, 1.0]
+
+Stack: [+]
+
+tokens: [1.0, +, 1.0, +, 1.0]
+Stack: [+]
+outputQueue: [1.0, 1.0, +, 1.0, +, 1.0, +]
+
+
+tokens: [+, 1.0, +, 1.0]
+Stack: [+]
+outputQueue: [1.0, 1.0, +, 1.0, +, 1.0, +, 1.0]
+
+Stack: [+]
+
+tokens: [1.0, +, 1.0]
+Stack: [+]
+outputQueue: [1.0, 1.0, +, 1.0, +, 1.0, +, 1.0, +]
+
+
+tokens: [+, 1.0]
+Stack: [+]
+outputQueue: [1.0, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0]
+
+Stack: [+]
+
+tokens: [1.0]
+Stack: [+]
+outputQueue: [1.0, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +]
+
+
+STARTING POSTFIX
+Loop for: 1.0
+starting queue: [1.0, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +]
+stack: [1.0]
+Loop for: 1.0
+starting queue: [1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +]
+starting stack: [1.0]
+class java.lang.Double
+Double
+queue: [+, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +]
+stack: [1.0, 1.0]
+Loop for: +
+starting queue: [+, 1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +]
+starting stack: [1.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is [1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, +, 1.0, +, 1.0, +, 1.0, +, 1.0, +]
+starting stack: [2.0]
+class java.lang.Double
+Double
+queue: [+, 1.0, +, 1.0, +, 1.0, +, 1.0, +]
+stack: [2.0, 1.0]
+Loop for: +
+starting queue: [+, 1.0, +, 1.0, +, 1.0, +, 1.0, +]
+starting stack: [2.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is [1.0, +, 1.0, +, 1.0, +, 1.0, +]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, +, 1.0, +, 1.0, +, 1.0, +]
+starting stack: [3.0]
+class java.lang.Double
+Double
+queue: [+, 1.0, +, 1.0, +, 1.0, +]
+stack: [3.0, 1.0]
+Loop for: +
+starting queue: [+, 1.0, +, 1.0, +, 1.0, +]
+starting stack: [3.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is [1.0, +, 1.0, +, 1.0, +]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, +, 1.0, +, 1.0, +]
+starting stack: [4.0]
+class java.lang.Double
+Double
+queue: [+, 1.0, +, 1.0, +]
+stack: [4.0, 1.0]
+Loop for: +
+starting queue: [+, 1.0, +, 1.0, +]
+starting stack: [4.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is [1.0, +, 1.0, +]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, +, 1.0, +]
+starting stack: [5.0]
+class java.lang.Double
+Double
+queue: [+, 1.0, +]
+stack: [5.0, 1.0]
+Loop for: +
+starting queue: [+, 1.0, +]
+starting stack: [5.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is [1.0, +]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, +]
+starting stack: [6.0]
+class java.lang.Double
+Double
+queue: [+]
+stack: [6.0, 1.0]
+Loop for: +
+starting queue: [+]
+starting stack: [6.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+tokens: [10.0, -, 3.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [-, 3.0]
+Stack: []
+outputQueue: [10.0]
+
+Stack: []
+
+tokens: [3.0]
+Stack: [-]
+outputQueue: [10.0]
+
+
+STARTING POSTFIX
+Loop for: 10.0
+starting queue: [10.0, 3.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [3.0, -]
+stack: [10.0]
+Loop for: 3.0
+starting queue: [3.0, -]
+starting stack: [10.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [10.0, 3.0]
+Loop for: -
+starting queue: [-]
+starting stack: [10.0, 3.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [15.0, -, 6.0, -, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [-, 6.0, -, 2.0]
+Stack: []
+outputQueue: [15.0]
+
+Stack: []
+
+tokens: [6.0, -, 2.0]
+Stack: [-]
+outputQueue: [15.0]
+
+
+tokens: [-, 2.0]
+Stack: [-]
+outputQueue: [15.0, 6.0]
+
+Stack: [-]
+
+tokens: [2.0]
+Stack: [-]
+outputQueue: [15.0, 6.0, -]
+
+
+STARTING POSTFIX
+Loop for: 15.0
+starting queue: [15.0, 6.0, -, 2.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [6.0, -, 2.0, -]
+stack: [15.0]
+Loop for: 6.0
+starting queue: [6.0, -, 2.0, -]
+starting stack: [15.0]
+class java.lang.Double
+Double
+queue: [-, 2.0, -]
+stack: [15.0, 6.0]
+Loop for: -
+starting queue: [-, 2.0, -]
+starting stack: [15.0, 6.0]
+class java.lang.Character
+operator: -
+Tokens is [2.0, -]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, -]
+starting stack: [9.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [9.0, 2.0]
+Loop for: -
+starting queue: [-]
+starting stack: [9.0, 2.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [12.0, -, 1.0, -, 1.0, -, 1.0, -, 1.0, -, 1.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [-, 1.0, -, 1.0, -, 1.0, -, 1.0, -, 1.0]
+Stack: []
+outputQueue: [12.0]
+
+Stack: []
+
+tokens: [1.0, -, 1.0, -, 1.0, -, 1.0, -, 1.0]
+Stack: [-]
+outputQueue: [12.0]
+
+
+tokens: [-, 1.0, -, 1.0, -, 1.0, -, 1.0]
+Stack: [-]
+outputQueue: [12.0, 1.0]
+
+Stack: [-]
+
+tokens: [1.0, -, 1.0, -, 1.0, -, 1.0]
+Stack: [-]
+outputQueue: [12.0, 1.0, -]
+
+
+tokens: [-, 1.0, -, 1.0, -, 1.0]
+Stack: [-]
+outputQueue: [12.0, 1.0, -, 1.0]
+
+Stack: [-]
+
+tokens: [1.0, -, 1.0, -, 1.0]
+Stack: [-]
+outputQueue: [12.0, 1.0, -, 1.0, -]
+
+
+tokens: [-, 1.0, -, 1.0]
+Stack: [-]
+outputQueue: [12.0, 1.0, -, 1.0, -, 1.0]
+
+Stack: [-]
+
+tokens: [1.0, -, 1.0]
+Stack: [-]
+outputQueue: [12.0, 1.0, -, 1.0, -, 1.0, -]
+
+
+tokens: [-, 1.0]
+Stack: [-]
+outputQueue: [12.0, 1.0, -, 1.0, -, 1.0, -, 1.0]
+
+Stack: [-]
+
+tokens: [1.0]
+Stack: [-]
+outputQueue: [12.0, 1.0, -, 1.0, -, 1.0, -, 1.0, -]
+
+
+STARTING POSTFIX
+Loop for: 12.0
+starting queue: [12.0, 1.0, -, 1.0, -, 1.0, -, 1.0, -, 1.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, -, 1.0, -, 1.0, -, 1.0, -, 1.0, -]
+stack: [12.0]
+Loop for: 1.0
+starting queue: [1.0, -, 1.0, -, 1.0, -, 1.0, -, 1.0, -]
+starting stack: [12.0]
+class java.lang.Double
+Double
+queue: [-, 1.0, -, 1.0, -, 1.0, -, 1.0, -]
+stack: [12.0, 1.0]
+Loop for: -
+starting queue: [-, 1.0, -, 1.0, -, 1.0, -, 1.0, -]
+starting stack: [12.0, 1.0]
+class java.lang.Character
+operator: -
+Tokens is [1.0, -, 1.0, -, 1.0, -, 1.0, -]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, -, 1.0, -, 1.0, -, 1.0, -]
+starting stack: [11.0]
+class java.lang.Double
+Double
+queue: [-, 1.0, -, 1.0, -, 1.0, -]
+stack: [11.0, 1.0]
+Loop for: -
+starting queue: [-, 1.0, -, 1.0, -, 1.0, -]
+starting stack: [11.0, 1.0]
+class java.lang.Character
+operator: -
+Tokens is [1.0, -, 1.0, -, 1.0, -]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, -, 1.0, -, 1.0, -]
+starting stack: [10.0]
+class java.lang.Double
+Double
+queue: [-, 1.0, -, 1.0, -]
+stack: [10.0, 1.0]
+Loop for: -
+starting queue: [-, 1.0, -, 1.0, -]
+starting stack: [10.0, 1.0]
+class java.lang.Character
+operator: -
+Tokens is [1.0, -, 1.0, -]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, -, 1.0, -]
+starting stack: [9.0]
+class java.lang.Double
+Double
+queue: [-, 1.0, -]
+stack: [9.0, 1.0]
+Loop for: -
+starting queue: [-, 1.0, -]
+starting stack: [9.0, 1.0]
+class java.lang.Character
+operator: -
+Tokens is [1.0, -]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, -]
+starting stack: [8.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [8.0, 1.0]
+Loop for: -
+starting queue: [-]
+starting stack: [8.0, 1.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [7.0, *, 1.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [*, 1.0]
+Stack: []
+outputQueue: [7.0]
+
+Stack: []
+
+tokens: [1.0]
+Stack: [*]
+outputQueue: [7.0]
+
+
+STARTING POSTFIX
+Loop for: 7.0
+starting queue: [7.0, 1.0, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, *]
+stack: [7.0]
+Loop for: 1.0
+starting queue: [1.0, *]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [*]
+stack: [7.0, 1.0]
+Loop for: *
+starting queue: [*]
+starting stack: [7.0, 1.0]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+tokens: [0.2, *, 35.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [*, 35.0]
+Stack: []
+outputQueue: [0.2]
+
+Stack: []
+
+tokens: [35.0]
+Stack: [*]
+outputQueue: [0.2]
+
+
+STARTING POSTFIX
+Loop for: 0.2
+starting queue: [0.2, 35.0, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [35.0, *]
+stack: [0.2]
+Loop for: 35.0
+starting queue: [35.0, *]
+starting stack: [0.2]
+class java.lang.Double
+Double
+queue: [*]
+stack: [0.2, 35.0]
+Loop for: *
+starting queue: [*]
+starting stack: [0.2, 35.0]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+tokens: [7.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [*, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0]
+Stack: []
+outputQueue: [7.0]
+
+Stack: []
+
+tokens: [1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0]
+Stack: [*]
+outputQueue: [7.0]
+
+
+tokens: [*, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0]
+Stack: [*]
+outputQueue: [7.0, 1.0]
+
+Stack: [*]
+
+tokens: [1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0]
+Stack: [*]
+outputQueue: [7.0, 1.0, *]
+
+
+tokens: [*, 1.0, *, 1.0, *, 1.0, *, 1.0]
+Stack: [*]
+outputQueue: [7.0, 1.0, *, 1.0]
+
+Stack: [*]
+
+tokens: [1.0, *, 1.0, *, 1.0, *, 1.0]
+Stack: [*]
+outputQueue: [7.0, 1.0, *, 1.0, *]
+
+
+tokens: [*, 1.0, *, 1.0, *, 1.0]
+Stack: [*]
+outputQueue: [7.0, 1.0, *, 1.0, *, 1.0]
+
+Stack: [*]
+
+tokens: [1.0, *, 1.0, *, 1.0]
+Stack: [*]
+outputQueue: [7.0, 1.0, *, 1.0, *, 1.0, *]
+
+
+tokens: [*, 1.0, *, 1.0]
+Stack: [*]
+outputQueue: [7.0, 1.0, *, 1.0, *, 1.0, *, 1.0]
+
+Stack: [*]
+
+tokens: [1.0, *, 1.0]
+Stack: [*]
+outputQueue: [7.0, 1.0, *, 1.0, *, 1.0, *, 1.0, *]
+
+
+tokens: [*, 1.0]
+Stack: [*]
+outputQueue: [7.0, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0]
+
+Stack: [*]
+
+tokens: [1.0]
+Stack: [*]
+outputQueue: [7.0, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *]
+
+
+STARTING POSTFIX
+Loop for: 7.0
+starting queue: [7.0, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *]
+stack: [7.0]
+Loop for: 1.0
+starting queue: [1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [*, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *]
+stack: [7.0, 1.0]
+Loop for: *
+starting queue: [*, 1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *]
+starting stack: [7.0, 1.0]
+class java.lang.Character
+operator: *
+Tokens is [1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, *, 1.0, *, 1.0, *, 1.0, *, 1.0, *]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [*, 1.0, *, 1.0, *, 1.0, *, 1.0, *]
+stack: [7.0, 1.0]
+Loop for: *
+starting queue: [*, 1.0, *, 1.0, *, 1.0, *, 1.0, *]
+starting stack: [7.0, 1.0]
+class java.lang.Character
+operator: *
+Tokens is [1.0, *, 1.0, *, 1.0, *, 1.0, *]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, *, 1.0, *, 1.0, *, 1.0, *]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [*, 1.0, *, 1.0, *, 1.0, *]
+stack: [7.0, 1.0]
+Loop for: *
+starting queue: [*, 1.0, *, 1.0, *, 1.0, *]
+starting stack: [7.0, 1.0]
+class java.lang.Character
+operator: *
+Tokens is [1.0, *, 1.0, *, 1.0, *]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, *, 1.0, *, 1.0, *]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [*, 1.0, *, 1.0, *]
+stack: [7.0, 1.0]
+Loop for: *
+starting queue: [*, 1.0, *, 1.0, *]
+starting stack: [7.0, 1.0]
+class java.lang.Character
+operator: *
+Tokens is [1.0, *, 1.0, *]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, *, 1.0, *]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [*, 1.0, *]
+stack: [7.0, 1.0]
+Loop for: *
+starting queue: [*, 1.0, *]
+starting stack: [7.0, 1.0]
+class java.lang.Character
+operator: *
+Tokens is [1.0, *]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, *]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [*]
+stack: [7.0, 1.0]
+Loop for: *
+starting queue: [*]
+starting stack: [7.0, 1.0]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+tokens: [14.0, /, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [/, 2.0]
+Stack: []
+outputQueue: [14.0]
+
+Stack: []
+
+tokens: [2.0]
+Stack: [/]
+outputQueue: [14.0]
+
+
+STARTING POSTFIX
+Loop for: 14.0
+starting queue: [14.0, 2.0, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, /]
+stack: [14.0]
+Loop for: 2.0
+starting queue: [2.0, /]
+starting stack: [14.0]
+class java.lang.Double
+Double
+queue: [/]
+stack: [14.0, 2.0]
+Loop for: /
+starting queue: [/]
+starting stack: [14.0, 2.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+tokens: [70.0, /, 5.0, /, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [/, 5.0, /, 2.0]
+Stack: []
+outputQueue: [70.0]
+
+Stack: []
+
+tokens: [5.0, /, 2.0]
+Stack: [/]
+outputQueue: [70.0]
+
+
+tokens: [/, 2.0]
+Stack: [/]
+outputQueue: [70.0, 5.0]
+
+Stack: [/]
+
+tokens: [2.0]
+Stack: [/]
+outputQueue: [70.0, 5.0, /]
+
+
+STARTING POSTFIX
+Loop for: 70.0
+starting queue: [70.0, 5.0, /, 2.0, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [5.0, /, 2.0, /]
+stack: [70.0]
+Loop for: 5.0
+starting queue: [5.0, /, 2.0, /]
+starting stack: [70.0]
+class java.lang.Double
+Double
+queue: [/, 2.0, /]
+stack: [70.0, 5.0]
+Loop for: /
+starting queue: [/, 2.0, /]
+starting stack: [70.0, 5.0]
+class java.lang.Character
+operator: /
+Tokens is [2.0, /]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, /]
+starting stack: [14.0]
+class java.lang.Double
+Double
+queue: [/]
+stack: [14.0, 2.0]
+Loop for: /
+starting queue: [/]
+starting stack: [14.0, 2.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+tokens: [1.0, +, 2.0, *, 3.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [+, 2.0, *, 3.0]
+Stack: []
+outputQueue: [1.0]
+
+Stack: []
+
+tokens: [2.0, *, 3.0]
+Stack: [+]
+outputQueue: [1.0]
+
+
+tokens: [*, 3.0]
+Stack: [+]
+outputQueue: [1.0, 2.0]
+
+Stack: [+]
+
+tokens: [3.0]
+Stack: [+, *]
+outputQueue: [1.0, 2.0]
+
+
+STARTING POSTFIX
+Loop for: 1.0
+starting queue: [1.0, 2.0, 3.0, *, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, 3.0, *, +]
+stack: [1.0]
+Loop for: 2.0
+starting queue: [2.0, 3.0, *, +]
+starting stack: [1.0]
+class java.lang.Double
+Double
+queue: [3.0, *, +]
+stack: [1.0, 2.0]
+Loop for: 3.0
+starting queue: [3.0, *, +]
+starting stack: [1.0, 2.0]
+class java.lang.Double
+Double
+queue: [*, +]
+stack: [1.0, 2.0, 3.0]
+Loop for: *
+starting queue: [*, +]
+starting stack: [1.0, 2.0, 3.0]
+class java.lang.Character
+operator: *
+Tokens is [+]
+DigitStack is [1.0]
+Loop for: +
+starting queue: [+]
+starting stack: [1.0, 6.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+tokens: [0.0, -, 1.0, -, 2.0, *, 3.0, +, 4.0, *, 5.0, -, 6.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [-, 1.0, -, 2.0, *, 3.0, +, 4.0, *, 5.0, -, 6.0]
+Stack: []
+outputQueue: [0.0]
+
+Stack: []
+
+tokens: [1.0, -, 2.0, *, 3.0, +, 4.0, *, 5.0, -, 6.0]
+Stack: [-]
+outputQueue: [0.0]
+
+
+tokens: [-, 2.0, *, 3.0, +, 4.0, *, 5.0, -, 6.0]
+Stack: [-]
+outputQueue: [0.0, 1.0]
+
+Stack: [-]
+
+tokens: [2.0, *, 3.0, +, 4.0, *, 5.0, -, 6.0]
+Stack: [-]
+outputQueue: [0.0, 1.0, -]
+
+
+tokens: [*, 3.0, +, 4.0, *, 5.0, -, 6.0]
+Stack: [-]
+outputQueue: [0.0, 1.0, -, 2.0]
+
+Stack: [-]
+
+tokens: [3.0, +, 4.0, *, 5.0, -, 6.0]
+Stack: [-, *]
+outputQueue: [0.0, 1.0, -, 2.0]
+
+
+tokens: [+, 4.0, *, 5.0, -, 6.0]
+Stack: [-, *]
+outputQueue: [0.0, 1.0, -, 2.0, 3.0]
+
+Stack: [-, *]
+
+tokens: [4.0, *, 5.0, -, 6.0]
+Stack: [+]
+outputQueue: [0.0, 1.0, -, 2.0, 3.0, *, -]
+
+
+tokens: [*, 5.0, -, 6.0]
+Stack: [+]
+outputQueue: [0.0, 1.0, -, 2.0, 3.0, *, -, 4.0]
+
+Stack: [+]
+
+tokens: [5.0, -, 6.0]
+Stack: [+, *]
+outputQueue: [0.0, 1.0, -, 2.0, 3.0, *, -, 4.0]
+
+
+tokens: [-, 6.0]
+Stack: [+, *]
+outputQueue: [0.0, 1.0, -, 2.0, 3.0, *, -, 4.0, 5.0]
+
+Stack: [+, *]
+
+tokens: [6.0]
+Stack: [-]
+outputQueue: [0.0, 1.0, -, 2.0, 3.0, *, -, 4.0, 5.0, *, +]
+
+
+STARTING POSTFIX
+Loop for: 0.0
+starting queue: [0.0, 1.0, -, 2.0, 3.0, *, -, 4.0, 5.0, *, +, 6.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, -, 2.0, 3.0, *, -, 4.0, 5.0, *, +, 6.0, -]
+stack: [0.0]
+Loop for: 1.0
+starting queue: [1.0, -, 2.0, 3.0, *, -, 4.0, 5.0, *, +, 6.0, -]
+starting stack: [0.0]
+class java.lang.Double
+Double
+queue: [-, 2.0, 3.0, *, -, 4.0, 5.0, *, +, 6.0, -]
+stack: [0.0, 1.0]
+Loop for: -
+starting queue: [-, 2.0, 3.0, *, -, 4.0, 5.0, *, +, 6.0, -]
+starting stack: [0.0, 1.0]
+class java.lang.Character
+operator: -
+Tokens is [2.0, 3.0, *, -, 4.0, 5.0, *, +, 6.0, -]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, 3.0, *, -, 4.0, 5.0, *, +, 6.0, -]
+starting stack: [-1.0]
+class java.lang.Double
+Double
+queue: [3.0, *, -, 4.0, 5.0, *, +, 6.0, -]
+stack: [-1.0, 2.0]
+Loop for: 3.0
+starting queue: [3.0, *, -, 4.0, 5.0, *, +, 6.0, -]
+starting stack: [-1.0, 2.0]
+class java.lang.Double
+Double
+queue: [*, -, 4.0, 5.0, *, +, 6.0, -]
+stack: [-1.0, 2.0, 3.0]
+Loop for: *
+starting queue: [*, -, 4.0, 5.0, *, +, 6.0, -]
+starting stack: [-1.0, 2.0, 3.0]
+class java.lang.Character
+operator: *
+Tokens is [-, 4.0, 5.0, *, +, 6.0, -]
+DigitStack is [-1.0]
+Loop for: -
+starting queue: [-, 4.0, 5.0, *, +, 6.0, -]
+starting stack: [-1.0, 6.0]
+class java.lang.Character
+operator: -
+Tokens is [4.0, 5.0, *, +, 6.0, -]
+DigitStack is []
+Loop for: 4.0
+starting queue: [4.0, 5.0, *, +, 6.0, -]
+starting stack: [-7.0]
+class java.lang.Double
+Double
+queue: [5.0, *, +, 6.0, -]
+stack: [-7.0, 4.0]
+Loop for: 5.0
+starting queue: [5.0, *, +, 6.0, -]
+starting stack: [-7.0, 4.0]
+class java.lang.Double
+Double
+queue: [*, +, 6.0, -]
+stack: [-7.0, 4.0, 5.0]
+Loop for: *
+starting queue: [*, +, 6.0, -]
+starting stack: [-7.0, 4.0, 5.0]
+class java.lang.Character
+operator: *
+Tokens is [+, 6.0, -]
+DigitStack is [-7.0]
+Loop for: +
+starting queue: [+, 6.0, -]
+starting stack: [-7.0, 20.0]
+class java.lang.Character
+operator: +
+Tokens is [6.0, -]
+DigitStack is []
+Loop for: 6.0
+starting queue: [6.0, -]
+starting stack: [13.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [13.0, 6.0]
+Loop for: -
+starting queue: [-]
+starting stack: [13.0, 6.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [2.0, *, 4.0, -, 1.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [*, 4.0, -, 1.0]
+Stack: []
+outputQueue: [2.0]
+
+Stack: []
+
+tokens: [4.0, -, 1.0]
+Stack: [*]
+outputQueue: [2.0]
+
+
+tokens: [-, 1.0]
+Stack: [*]
+outputQueue: [2.0, 4.0]
+
+Stack: [*]
+
+tokens: [1.0]
+Stack: [-]
+outputQueue: [2.0, 4.0, *]
+
+
+STARTING POSTFIX
+Loop for: 2.0
+starting queue: [2.0, 4.0, *, 1.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [4.0, *, 1.0, -]
+stack: [2.0]
+Loop for: 4.0
+starting queue: [4.0, *, 1.0, -]
+starting stack: [2.0]
+class java.lang.Double
+Double
+queue: [*, 1.0, -]
+stack: [2.0, 4.0]
+Loop for: *
+starting queue: [*, 1.0, -]
+starting stack: [2.0, 4.0]
+class java.lang.Character
+operator: *
+Tokens is [1.0, -]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, -]
+starting stack: [8.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [8.0, 1.0]
+Loop for: -
+starting queue: [-]
+starting stack: [8.0, 1.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [15.0, -, 2.0, *, 4.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [-, 2.0, *, 4.0]
+Stack: []
+outputQueue: [15.0]
+
+Stack: []
+
+tokens: [2.0, *, 4.0]
+Stack: [-]
+outputQueue: [15.0]
+
+
+tokens: [*, 4.0]
+Stack: [-]
+outputQueue: [15.0, 2.0]
+
+Stack: [-]
+
+tokens: [4.0]
+Stack: [-, *]
+outputQueue: [15.0, 2.0]
+
+
+STARTING POSTFIX
+Loop for: 15.0
+starting queue: [15.0, 2.0, 4.0, *, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, 4.0, *, -]
+stack: [15.0]
+Loop for: 2.0
+starting queue: [2.0, 4.0, *, -]
+starting stack: [15.0]
+class java.lang.Double
+Double
+queue: [4.0, *, -]
+stack: [15.0, 2.0]
+Loop for: 4.0
+starting queue: [4.0, *, -]
+starting stack: [15.0, 2.0]
+class java.lang.Double
+Double
+queue: [*, -]
+stack: [15.0, 2.0, 4.0]
+Loop for: *
+starting queue: [*, -]
+starting stack: [15.0, 2.0, 4.0]
+class java.lang.Character
+operator: *
+Tokens is [-]
+DigitStack is [15.0]
+Loop for: -
+starting queue: [-]
+starting stack: [15.0, 8.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [18.0, /, 2.0, -, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [/, 2.0, -, 2.0]
+Stack: []
+outputQueue: [18.0]
+
+Stack: []
+
+tokens: [2.0, -, 2.0]
+Stack: [/]
+outputQueue: [18.0]
+
+
+tokens: [-, 2.0]
+Stack: [/]
+outputQueue: [18.0, 2.0]
+
+Stack: [/]
+
+tokens: [2.0]
+Stack: [-]
+outputQueue: [18.0, 2.0, /]
+
+
+STARTING POSTFIX
+Loop for: 18.0
+starting queue: [18.0, 2.0, /, 2.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, /, 2.0, -]
+stack: [18.0]
+Loop for: 2.0
+starting queue: [2.0, /, 2.0, -]
+starting stack: [18.0]
+class java.lang.Double
+Double
+queue: [/, 2.0, -]
+stack: [18.0, 2.0]
+Loop for: /
+starting queue: [/, 2.0, -]
+starting stack: [18.0, 2.0]
+class java.lang.Character
+operator: /
+Tokens is [2.0, -]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, -]
+starting stack: [9.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [9.0, 2.0]
+Loop for: -
+starting queue: [-]
+starting stack: [9.0, 2.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [11.0, -, 8.0, /, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [-, 8.0, /, 2.0]
+Stack: []
+outputQueue: [11.0]
+
+Stack: []
+
+tokens: [8.0, /, 2.0]
+Stack: [-]
+outputQueue: [11.0]
+
+
+tokens: [/, 2.0]
+Stack: [-]
+outputQueue: [11.0, 8.0]
+
+Stack: [-]
+
+tokens: [2.0]
+Stack: [-, /]
+outputQueue: [11.0, 8.0]
+
+
+STARTING POSTFIX
+Loop for: 11.0
+starting queue: [11.0, 8.0, 2.0, /, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [8.0, 2.0, /, -]
+stack: [11.0]
+Loop for: 8.0
+starting queue: [8.0, 2.0, /, -]
+starting stack: [11.0]
+class java.lang.Double
+Double
+queue: [2.0, /, -]
+stack: [11.0, 8.0]
+Loop for: 2.0
+starting queue: [2.0, /, -]
+starting stack: [11.0, 8.0]
+class java.lang.Double
+Double
+queue: [/, -]
+stack: [11.0, 8.0, 2.0]
+Loop for: /
+starting queue: [/, -]
+starting stack: [11.0, 8.0, 2.0]
+class java.lang.Character
+operator: /
+Tokens is [-]
+DigitStack is [11.0]
+Loop for: -
+starting queue: [-]
+starting stack: [11.0, 4.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [10.0, +, 2.0, -, 5.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [+, 2.0, -, 5.0]
+Stack: []
+outputQueue: [10.0]
+
+Stack: []
+
+tokens: [2.0, -, 5.0]
+Stack: [+]
+outputQueue: [10.0]
+
+
+tokens: [-, 5.0]
+Stack: [+]
+outputQueue: [10.0, 2.0]
+
+Stack: [+]
+
+tokens: [5.0]
+Stack: [-]
+outputQueue: [10.0, 2.0, +]
+
+
+STARTING POSTFIX
+Loop for: 10.0
+starting queue: [10.0, 2.0, +, 5.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, +, 5.0, -]
+stack: [10.0]
+Loop for: 2.0
+starting queue: [2.0, +, 5.0, -]
+starting stack: [10.0]
+class java.lang.Double
+Double
+queue: [+, 5.0, -]
+stack: [10.0, 2.0]
+Loop for: +
+starting queue: [+, 5.0, -]
+starting stack: [10.0, 2.0]
+class java.lang.Character
+operator: +
+Tokens is [5.0, -]
+DigitStack is []
+Loop for: 5.0
+starting queue: [5.0, -]
+starting stack: [12.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [12.0, 5.0]
+Loop for: -
+starting queue: [-]
+starting stack: [12.0, 5.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [10.0, -, 5.0, +, 2.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [-, 5.0, +, 2.0]
+Stack: []
+outputQueue: [10.0]
+
+Stack: []
+
+tokens: [5.0, +, 2.0]
+Stack: [-]
+outputQueue: [10.0]
+
+
+tokens: [+, 2.0]
+Stack: [-]
+outputQueue: [10.0, 5.0]
+
+Stack: [-]
+
+tokens: [2.0]
+Stack: [+]
+outputQueue: [10.0, 5.0, -]
+
+
+STARTING POSTFIX
+Loop for: 10.0
+starting queue: [10.0, 5.0, -, 2.0, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [5.0, -, 2.0, +]
+stack: [10.0]
+Loop for: 5.0
+starting queue: [5.0, -, 2.0, +]
+starting stack: [10.0]
+class java.lang.Double
+Double
+queue: [-, 2.0, +]
+stack: [10.0, 5.0]
+Loop for: -
+starting queue: [-, 2.0, +]
+starting stack: [10.0, 5.0]
+class java.lang.Character
+operator: -
+Tokens is [2.0, +]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, +]
+starting stack: [5.0]
+class java.lang.Double
+Double
+queue: [+]
+stack: [5.0, 2.0]
+Loop for: +
+starting queue: [+]
+starting stack: [5.0, 2.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+tokens: [70.0, *, 4.0, /, 40.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [*, 4.0, /, 40.0]
+Stack: []
+outputQueue: [70.0]
+
+Stack: []
+
+tokens: [4.0, /, 40.0]
+Stack: [*]
+outputQueue: [70.0]
+
+
+tokens: [/, 40.0]
+Stack: [*]
+outputQueue: [70.0, 4.0]
+
+Stack: [*]
+
+tokens: [40.0]
+Stack: [/]
+outputQueue: [70.0, 4.0, *]
+
+
+STARTING POSTFIX
+Loop for: 70.0
+starting queue: [70.0, 4.0, *, 40.0, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [4.0, *, 40.0, /]
+stack: [70.0]
+Loop for: 4.0
+starting queue: [4.0, *, 40.0, /]
+starting stack: [70.0]
+class java.lang.Double
+Double
+queue: [*, 40.0, /]
+stack: [70.0, 4.0]
+Loop for: *
+starting queue: [*, 40.0, /]
+starting stack: [70.0, 4.0]
+class java.lang.Character
+operator: *
+Tokens is [40.0, /]
+DigitStack is []
+Loop for: 40.0
+starting queue: [40.0, /]
+starting stack: [280.0]
+class java.lang.Double
+Double
+queue: [/]
+stack: [280.0, 40.0]
+Loop for: /
+starting queue: [/]
+starting stack: [280.0, 40.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+tokens: [70.0, /, 5.0, *, 0.5]
+Stack: []
+outputQueue: []
+
+
+tokens: [/, 5.0, *, 0.5]
+Stack: []
+outputQueue: [70.0]
+
+Stack: []
+
+tokens: [5.0, *, 0.5]
+Stack: [/]
+outputQueue: [70.0]
+
+
+tokens: [*, 0.5]
+Stack: [/]
+outputQueue: [70.0, 5.0]
+
+Stack: [/]
+
+tokens: [0.5]
+Stack: [*]
+outputQueue: [70.0, 5.0, /]
+
+
+STARTING POSTFIX
+Loop for: 70.0
+starting queue: [70.0, 5.0, /, 0.5, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [5.0, /, 0.5, *]
+stack: [70.0]
+Loop for: 5.0
+starting queue: [5.0, /, 0.5, *]
+starting stack: [70.0]
+class java.lang.Double
+Double
+queue: [/, 0.5, *]
+stack: [70.0, 5.0]
+Loop for: /
+starting queue: [/, 0.5, *]
+starting stack: [70.0, 5.0]
+class java.lang.Character
+operator: /
+Tokens is [0.5, *]
+DigitStack is []
+Loop for: 0.5
+starting queue: [0.5, *]
+starting stack: [14.0]
+class java.lang.Double
+Double
+queue: [*]
+stack: [14.0, 0.5]
+Loop for: *
+starting queue: [*]
+starting stack: [14.0, 0.5]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+tokens: [100.0, /, 10.0, -, 9.0, /, 3.0]
+Stack: []
+outputQueue: []
+
+
+tokens: [/, 10.0, -, 9.0, /, 3.0]
+Stack: []
+outputQueue: [100.0]
+
+Stack: []
+
+tokens: [10.0, -, 9.0, /, 3.0]
+Stack: [/]
+outputQueue: [100.0]
+
+
+tokens: [-, 9.0, /, 3.0]
+Stack: [/]
+outputQueue: [100.0, 10.0]
+
+Stack: [/]
+
+tokens: [9.0, /, 3.0]
+Stack: [-]
+outputQueue: [100.0, 10.0, /]
+
+
+tokens: [/, 3.0]
+Stack: [-]
+outputQueue: [100.0, 10.0, /, 9.0]
+
+Stack: [-]
+
+tokens: [3.0]
+Stack: [-, /]
+outputQueue: [100.0, 10.0, /, 9.0]
+
+
+STARTING POSTFIX
+Loop for: 100.0
+starting queue: [100.0, 10.0, /, 9.0, 3.0, /, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [10.0, /, 9.0, 3.0, /, -]
+stack: [100.0]
+Loop for: 10.0
+starting queue: [10.0, /, 9.0, 3.0, /, -]
+starting stack: [100.0]
+class java.lang.Double
+Double
+queue: [/, 9.0, 3.0, /, -]
+stack: [100.0, 10.0]
+Loop for: /
+starting queue: [/, 9.0, 3.0, /, -]
+starting stack: [100.0, 10.0]
+class java.lang.Character
+operator: /
+Tokens is [9.0, 3.0, /, -]
+DigitStack is []
+Loop for: 9.0
+starting queue: [9.0, 3.0, /, -]
+starting stack: [10.0]
+class java.lang.Double
+Double
+queue: [3.0, /, -]
+stack: [10.0, 9.0]
+Loop for: 3.0
+starting queue: [3.0, /, -]
+starting stack: [10.0, 9.0]
+class java.lang.Double
+Double
+queue: [/, -]
+stack: [10.0, 9.0, 3.0]
+Loop for: /
+starting queue: [/, -]
+starting stack: [10.0, 9.0, 3.0]
+class java.lang.Character
+operator: /
+Tokens is [-]
+DigitStack is [10.0]
+Loop for: -
+starting queue: [-]
+starting stack: [10.0, 3.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+tokens: [3.14159]
+Stack: []
+outputQueue: []
+
+
+STARTING POSTFIX
+
+tokens: [7.0]
+Stack: []
+outputQueue: []
+
+
+STARTING POSTFIX
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.3</a> at Mar 13, 2025, 2:26:49 PM</p>
+</div>
+</div>
+</body>
+</html>

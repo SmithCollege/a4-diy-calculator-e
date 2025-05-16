@@ -4,6 +4,10 @@ import org.junit.*;
 import static org.junit.Assert.*;
     
 public class PostfixTest {
+    // public static void main(String[] args) {
+    //     PostfixTest test = new PostfixTest(); 
+    //     test.testPostfixSingle();
+    // }
     @Test
     public void testPostfixSingle() {
         String[] expressions = {
@@ -28,6 +32,7 @@ public class PostfixTest {
         for (int i = 0; i < expressions.length; i++) {
             assertEquals("Failed for expression: " + expressions[i], 7.0, Postfix.postfix(Tokenizer.readTokens(expressions[i])), 0.00001);
         }
+        
     }
 
     @Test

@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="a4.PostfixTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-03-13T18:26:49" hostname="Ellies-MacBook-Pro.local" time="0.011">
+  <properties/>
+  <testcase name="testPostfixSingle" classname="a4.PostfixTest" time="0.0"/>
+  <testcase name="testPostfixCombo" classname="a4.PostfixTest" time="0.002"/>
+  <testcase name="testPostfixMinus" classname="a4.PostfixTest" time="0.002"/>
+  <testcase name="testPostfixTimes" classname="a4.PostfixTest" time="0.002"/>
+  <testcase name="testPostfixThrowsException" classname="a4.PostfixTest" time="0.0"/>
+  <testcase name="testPostfixDiv" classname="a4.PostfixTest" time="0.002"/>
+  <testcase name="testPostfixPlus" classname="a4.PostfixTest" time="0.003"/>
+  <system-out><![CDATA[
+STARTING POSTFIX
+
+STARTING POSTFIX
+
+STARTING POSTFIX
+Loop for: 28.0
+starting queue: [28.0, 1.0, 4.0, /, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, 4.0, /, *]
+stack: [28.0]
+Loop for: 1.0
+starting queue: [1.0, 4.0, /, *]
+starting stack: [28.0]
+class java.lang.Double
+Double
+queue: [4.0, /, *]
+stack: [28.0, 1.0]
+Loop for: 4.0
+starting queue: [4.0, /, *]
+starting stack: [28.0, 1.0]
+class java.lang.Double
+Double
+queue: [/, *]
+stack: [28.0, 1.0, 4.0]
+Loop for: /
+starting queue: [/, *]
+starting stack: [28.0, 1.0, 4.0]
+class java.lang.Character
+operator: /
+Tokens is [*]
+DigitStack is [28.0]
+Loop for: *
+starting queue: [*]
+starting stack: [28.0, 0.25]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 3.0
+starting queue: [3.0, 1.0, +, 10.0, 3.0, -, *, 4.0, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, +, 10.0, 3.0, -, *, 4.0, /]
+stack: [3.0]
+Loop for: 1.0
+starting queue: [1.0, +, 10.0, 3.0, -, *, 4.0, /]
+starting stack: [3.0]
+class java.lang.Double
+Double
+queue: [+, 10.0, 3.0, -, *, 4.0, /]
+stack: [3.0, 1.0]
+Loop for: +
+starting queue: [+, 10.0, 3.0, -, *, 4.0, /]
+starting stack: [3.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is [10.0, 3.0, -, *, 4.0, /]
+DigitStack is []
+Loop for: 10.0
+starting queue: [10.0, 3.0, -, *, 4.0, /]
+starting stack: [4.0]
+class java.lang.Double
+Double
+queue: [3.0, -, *, 4.0, /]
+stack: [4.0, 10.0]
+Loop for: 3.0
+starting queue: [3.0, -, *, 4.0, /]
+starting stack: [4.0, 10.0]
+class java.lang.Double
+Double
+queue: [-, *, 4.0, /]
+stack: [4.0, 10.0, 3.0]
+Loop for: -
+starting queue: [-, *, 4.0, /]
+starting stack: [4.0, 10.0, 3.0]
+class java.lang.Character
+operator: -
+Tokens is [*, 4.0, /]
+DigitStack is [4.0]
+Loop for: *
+starting queue: [*, 4.0, /]
+starting stack: [4.0, 7.0]
+class java.lang.Character
+operator: *
+Tokens is [4.0, /]
+DigitStack is []
+Loop for: 4.0
+starting queue: [4.0, /]
+starting stack: [28.0]
+class java.lang.Double
+Double
+queue: [/]
+stack: [28.0, 4.0]
+Loop for: /
+starting queue: [/]
+starting stack: [28.0, 4.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 7.0
+starting queue: [7.0, 1.0, *, 1.0, /, 0.0, +, 0.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, *, 1.0, /, 0.0, +, 0.0, -]
+stack: [7.0]
+Loop for: 1.0
+starting queue: [1.0, *, 1.0, /, 0.0, +, 0.0, -]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [*, 1.0, /, 0.0, +, 0.0, -]
+stack: [7.0, 1.0]
+Loop for: *
+starting queue: [*, 1.0, /, 0.0, +, 0.0, -]
+starting stack: [7.0, 1.0]
+class java.lang.Character
+operator: *
+Tokens is [1.0, /, 0.0, +, 0.0, -]
+DigitStack is []
+Loop for: 1.0
+starting queue: [1.0, /, 0.0, +, 0.0, -]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [/, 0.0, +, 0.0, -]
+stack: [7.0, 1.0]
+Loop for: /
+starting queue: [/, 0.0, +, 0.0, -]
+starting stack: [7.0, 1.0]
+class java.lang.Character
+operator: /
+Tokens is [0.0, +, 0.0, -]
+DigitStack is []
+Loop for: 0.0
+starting queue: [0.0, +, 0.0, -]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [+, 0.0, -]
+stack: [7.0, 0.0]
+Loop for: +
+starting queue: [+, 0.0, -]
+starting stack: [7.0, 0.0]
+class java.lang.Character
+operator: +
+Tokens is [0.0, -]
+DigitStack is []
+Loop for: 0.0
+starting queue: [0.0, -]
+starting stack: [7.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [7.0, 0.0]
+Loop for: -
+starting queue: [-]
+starting stack: [7.0, 0.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 9.0
+starting queue: [9.0, 2.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, -]
+stack: [9.0]
+Loop for: 2.0
+starting queue: [2.0, -]
+starting stack: [9.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [9.0, 2.0]
+Loop for: -
+starting queue: [-]
+starting stack: [9.0, 2.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 11.0
+starting queue: [11.0, 4.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [4.0, -]
+stack: [11.0]
+Loop for: 4.0
+starting queue: [4.0, -]
+starting stack: [11.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [11.0, 4.0]
+Loop for: -
+starting queue: [-]
+starting stack: [11.0, 4.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 15.0
+starting queue: [15.0, 6.0, -, 2.0, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [6.0, -, 2.0, -]
+stack: [15.0]
+Loop for: 6.0
+starting queue: [6.0, -, 2.0, -]
+starting stack: [15.0]
+class java.lang.Double
+Double
+queue: [-, 2.0, -]
+stack: [15.0, 6.0]
+Loop for: -
+starting queue: [-, 2.0, -]
+starting stack: [15.0, 6.0]
+class java.lang.Character
+operator: -
+Tokens is [2.0, -]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, -]
+starting stack: [9.0]
+class java.lang.Double
+Double
+queue: [-]
+stack: [9.0, 2.0]
+Loop for: -
+starting queue: [-]
+starting stack: [9.0, 2.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 15.0
+starting queue: [15.0, 10.0, 2.0, -, -]
+starting stack: []
+class java.lang.Double
+Double
+queue: [10.0, 2.0, -, -]
+stack: [15.0]
+Loop for: 10.0
+starting queue: [10.0, 2.0, -, -]
+starting stack: [15.0]
+class java.lang.Double
+Double
+queue: [2.0, -, -]
+stack: [15.0, 10.0]
+Loop for: 2.0
+starting queue: [2.0, -, -]
+starting stack: [15.0, 10.0]
+class java.lang.Double
+Double
+queue: [-, -]
+stack: [15.0, 10.0, 2.0]
+Loop for: -
+starting queue: [-, -]
+starting stack: [15.0, 10.0, 2.0]
+class java.lang.Character
+operator: -
+Tokens is [-]
+DigitStack is [15.0]
+Loop for: -
+starting queue: [-]
+starting stack: [15.0, 8.0]
+class java.lang.Character
+operator: -
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 3.5
+starting queue: [3.5, 2.0, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, *]
+stack: [3.5]
+Loop for: 2.0
+starting queue: [2.0, *]
+starting stack: [3.5]
+class java.lang.Double
+Double
+queue: [*]
+stack: [3.5, 2.0]
+Loop for: *
+starting queue: [*]
+starting stack: [3.5, 2.0]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 1.75
+starting queue: [1.75, 2.0, 2.0, *, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, 2.0, *, *]
+stack: [1.75]
+Loop for: 2.0
+starting queue: [2.0, 2.0, *, *]
+starting stack: [1.75]
+class java.lang.Double
+Double
+queue: [2.0, *, *]
+stack: [1.75, 2.0]
+Loop for: 2.0
+starting queue: [2.0, *, *]
+starting stack: [1.75, 2.0]
+class java.lang.Double
+Double
+queue: [*, *]
+stack: [1.75, 2.0, 2.0]
+Loop for: *
+starting queue: [*, *]
+starting stack: [1.75, 2.0, 2.0]
+class java.lang.Character
+operator: *
+Tokens is [*]
+DigitStack is [1.75]
+Loop for: *
+starting queue: [*]
+starting stack: [1.75, 4.0]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 1.75
+starting queue: [1.75, 2.0, *, 2.0, *]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, *, 2.0, *]
+stack: [1.75]
+Loop for: 2.0
+starting queue: [2.0, *, 2.0, *]
+starting stack: [1.75]
+class java.lang.Double
+Double
+queue: [*, 2.0, *]
+stack: [1.75, 2.0]
+Loop for: *
+starting queue: [*, 2.0, *]
+starting stack: [1.75, 2.0]
+class java.lang.Character
+operator: *
+Tokens is [2.0, *]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, *]
+starting stack: [3.5]
+class java.lang.Double
+Double
+queue: [*]
+stack: [3.5, 2.0]
+Loop for: *
+starting queue: [*]
+starting stack: [3.5, 2.0]
+class java.lang.Character
+operator: *
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+
+STARTING POSTFIX
+Loop for: 21.0
+starting queue: [21.0, 3.0, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [3.0, /]
+stack: [21.0]
+Loop for: 3.0
+starting queue: [3.0, /]
+starting stack: [21.0]
+class java.lang.Double
+Double
+queue: [/]
+stack: [21.0, 3.0]
+Loop for: /
+starting queue: [/]
+starting stack: [21.0, 3.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 70.0
+starting queue: [70.0, 5.0, /, 2.0, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [5.0, /, 2.0, /]
+stack: [70.0]
+Loop for: 5.0
+starting queue: [5.0, /, 2.0, /]
+starting stack: [70.0]
+class java.lang.Double
+Double
+queue: [/, 2.0, /]
+stack: [70.0, 5.0]
+Loop for: /
+starting queue: [/, 2.0, /]
+starting stack: [70.0, 5.0]
+class java.lang.Character
+operator: /
+Tokens is [2.0, /]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, /]
+starting stack: [14.0]
+class java.lang.Double
+Double
+queue: [/]
+stack: [14.0, 2.0]
+Loop for: /
+starting queue: [/]
+starting stack: [14.0, 2.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 70.0
+starting queue: [70.0, 100.0, 10.0, /, /]
+starting stack: []
+class java.lang.Double
+Double
+queue: [100.0, 10.0, /, /]
+stack: [70.0]
+Loop for: 100.0
+starting queue: [100.0, 10.0, /, /]
+starting stack: [70.0]
+class java.lang.Double
+Double
+queue: [10.0, /, /]
+stack: [70.0, 100.0]
+Loop for: 10.0
+starting queue: [10.0, /, /]
+starting stack: [70.0, 100.0]
+class java.lang.Double
+Double
+queue: [/, /]
+stack: [70.0, 100.0, 10.0]
+Loop for: /
+starting queue: [/, /]
+starting stack: [70.0, 100.0, 10.0]
+class java.lang.Character
+operator: /
+Tokens is [/]
+DigitStack is [70.0]
+Loop for: /
+starting queue: [/]
+starting stack: [70.0, 10.0]
+class java.lang.Character
+operator: /
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 6.0
+starting queue: [6.0, 1.0, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, +]
+stack: [6.0]
+Loop for: 1.0
+starting queue: [1.0, +]
+starting stack: [6.0]
+class java.lang.Double
+Double
+queue: [+]
+stack: [6.0, 1.0]
+Loop for: +
+starting queue: [+]
+starting stack: [6.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 0.0
+starting queue: [0.0, 7.0, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [7.0, +]
+stack: [0.0]
+Loop for: 7.0
+starting queue: [7.0, +]
+starting stack: [0.0]
+class java.lang.Double
+Double
+queue: [+]
+stack: [0.0, 7.0]
+Loop for: +
+starting queue: [+]
+starting stack: [0.0, 7.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 2.0
+starting queue: [2.0, 3.0, 2.0, +, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [3.0, 2.0, +, +]
+stack: [2.0]
+Loop for: 3.0
+starting queue: [3.0, 2.0, +, +]
+starting stack: [2.0]
+class java.lang.Double
+Double
+queue: [2.0, +, +]
+stack: [2.0, 3.0]
+Loop for: 2.0
+starting queue: [2.0, +, +]
+starting stack: [2.0, 3.0]
+class java.lang.Double
+Double
+queue: [+, +]
+stack: [2.0, 3.0, 2.0]
+Loop for: +
+starting queue: [+, +]
+starting stack: [2.0, 3.0, 2.0]
+class java.lang.Character
+operator: +
+Tokens is [+]
+DigitStack is [2.0]
+Loop for: +
+starting queue: [+]
+starting stack: [2.0, 5.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 2.0
+starting queue: [2.0, 2.0, 2.0, 1.0, +, +, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, 2.0, 1.0, +, +, +]
+stack: [2.0]
+Loop for: 2.0
+starting queue: [2.0, 2.0, 1.0, +, +, +]
+starting stack: [2.0]
+class java.lang.Double
+Double
+queue: [2.0, 1.0, +, +, +]
+stack: [2.0, 2.0]
+Loop for: 2.0
+starting queue: [2.0, 1.0, +, +, +]
+starting stack: [2.0, 2.0]
+class java.lang.Double
+Double
+queue: [1.0, +, +, +]
+stack: [2.0, 2.0, 2.0]
+Loop for: 1.0
+starting queue: [1.0, +, +, +]
+starting stack: [2.0, 2.0, 2.0]
+class java.lang.Double
+Double
+queue: [+, +, +]
+stack: [2.0, 2.0, 2.0, 1.0]
+Loop for: +
+starting queue: [+, +, +]
+starting stack: [2.0, 2.0, 2.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is [+, +]
+DigitStack is [2.0, 2.0]
+Loop for: +
+starting queue: [+, +]
+starting stack: [2.0, 2.0, 3.0]
+class java.lang.Character
+operator: +
+Tokens is [+]
+DigitStack is [2.0]
+Loop for: +
+starting queue: [+]
+starting stack: [2.0, 5.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 1.0
+starting queue: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, +, +, +, +, +, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, +, +, +, +, +, +]
+stack: [1.0]
+Loop for: 1.0
+starting queue: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, +, +, +, +, +, +]
+starting stack: [1.0]
+class java.lang.Double
+Double
+queue: [1.0, 1.0, 1.0, 1.0, 1.0, +, +, +, +, +, +]
+stack: [1.0, 1.0]
+Loop for: 1.0
+starting queue: [1.0, 1.0, 1.0, 1.0, 1.0, +, +, +, +, +, +]
+starting stack: [1.0, 1.0]
+class java.lang.Double
+Double
+queue: [1.0, 1.0, 1.0, 1.0, +, +, +, +, +, +]
+stack: [1.0, 1.0, 1.0]
+Loop for: 1.0
+starting queue: [1.0, 1.0, 1.0, 1.0, +, +, +, +, +, +]
+starting stack: [1.0, 1.0, 1.0]
+class java.lang.Double
+Double
+queue: [1.0, 1.0, 1.0, +, +, +, +, +, +]
+stack: [1.0, 1.0, 1.0, 1.0]
+Loop for: 1.0
+starting queue: [1.0, 1.0, 1.0, +, +, +, +, +, +]
+starting stack: [1.0, 1.0, 1.0, 1.0]
+class java.lang.Double
+Double
+queue: [1.0, 1.0, +, +, +, +, +, +]
+stack: [1.0, 1.0, 1.0, 1.0, 1.0]
+Loop for: 1.0
+starting queue: [1.0, 1.0, +, +, +, +, +, +]
+starting stack: [1.0, 1.0, 1.0, 1.0, 1.0]
+class java.lang.Double
+Double
+queue: [1.0, +, +, +, +, +, +]
+stack: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+Loop for: 1.0
+starting queue: [1.0, +, +, +, +, +, +]
+starting stack: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+class java.lang.Double
+Double
+queue: [+, +, +, +, +, +]
+stack: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+Loop for: +
+starting queue: [+, +, +, +, +, +]
+starting stack: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is [+, +, +, +, +]
+DigitStack is [1.0, 1.0, 1.0, 1.0, 1.0]
+Loop for: +
+starting queue: [+, +, +, +, +]
+starting stack: [1.0, 1.0, 1.0, 1.0, 1.0, 2.0]
+class java.lang.Character
+operator: +
+Tokens is [+, +, +, +]
+DigitStack is [1.0, 1.0, 1.0, 1.0]
+Loop for: +
+starting queue: [+, +, +, +]
+starting stack: [1.0, 1.0, 1.0, 1.0, 3.0]
+class java.lang.Character
+operator: +
+Tokens is [+, +, +]
+DigitStack is [1.0, 1.0, 1.0]
+Loop for: +
+starting queue: [+, +, +]
+starting stack: [1.0, 1.0, 1.0, 4.0]
+class java.lang.Character
+operator: +
+Tokens is [+, +]
+DigitStack is [1.0, 1.0]
+Loop for: +
+starting queue: [+, +]
+starting stack: [1.0, 1.0, 5.0]
+class java.lang.Character
+operator: +
+Tokens is [+]
+DigitStack is [1.0]
+Loop for: +
+starting queue: [+]
+starting stack: [1.0, 6.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+
+STARTING POSTFIX
+Loop for: 2.0
+starting queue: [2.0, 2.0, +, 2.0, 1.0, +, +]
+starting stack: []
+class java.lang.Double
+Double
+queue: [2.0, +, 2.0, 1.0, +, +]
+stack: [2.0]
+Loop for: 2.0
+starting queue: [2.0, +, 2.0, 1.0, +, +]
+starting stack: [2.0]
+class java.lang.Double
+Double
+queue: [+, 2.0, 1.0, +, +]
+stack: [2.0, 2.0]
+Loop for: +
+starting queue: [+, 2.0, 1.0, +, +]
+starting stack: [2.0, 2.0]
+class java.lang.Character
+operator: +
+Tokens is [2.0, 1.0, +, +]
+DigitStack is []
+Loop for: 2.0
+starting queue: [2.0, 1.0, +, +]
+starting stack: [4.0]
+class java.lang.Double
+Double
+queue: [1.0, +, +]
+stack: [4.0, 2.0]
+Loop for: 1.0
+starting queue: [1.0, +, +]
+starting stack: [4.0, 2.0]
+class java.lang.Double
+Double
+queue: [+, +]
+stack: [4.0, 2.0, 1.0]
+Loop for: +
+starting queue: [+, +]
+starting stack: [4.0, 2.0, 1.0]
+class java.lang.Character
+operator: +
+Tokens is [+]
+DigitStack is [4.0]
+Loop for: +
+starting queue: [+]
+starting stack: [4.0, 3.0]
+class java.lang.Character
+operator: +
+Tokens is []
+DigitStack is []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
